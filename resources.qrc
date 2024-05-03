@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>icon/PAFHRMClogo.png</file>
+    <file>icon/Logo.png</file>
+  </qresource>
+</RCC>
