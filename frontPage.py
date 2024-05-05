@@ -13,22 +13,29 @@ class MySideBar(QMainWindow,Ui_MainWindow):
 
 
         #HIDING ALL THE DROPDOWNS ON DEFAULT
-        self.afsc_monitoring_dropdown.setHidden(True)
-        self.elinstschooling_dropdown.setHidden(True)
-        self.officerschooling_dropdown.setHidden(True)
-        self.promotion_dropdown.setHidden(True)
-        self.reenlistmen_dropdown.setHidden(True)
-        self.schooling_dropdown.setHidden(True)
-        self.seniority_dropdown.setHidden(True)
-        self.placement_dropdown.setHidden(True)
-        self.etad_SOT_dropdown.setHidden(True)
-        self.attrition_dropdown.setHidden(True)
+        def hideEmall():
+            self.afsc_monitoring_dropdown.setHidden(True)
+            self.elinstschooling_dropdown.setHidden(True)
+            self.officerschooling_dropdown.setHidden(True)
+            self.promotion_dropdown.setHidden(True)
+            self.reenlistmen_dropdown.setHidden(True)
+            self.schooling_dropdown.setHidden(True)
+            self.seniority_dropdown.setHidden(True)
+            self.placement_dropdown.setHidden(True)
+            self.etad_SOT_dropdown.setHidden(True)
+            self.attrition_dropdown.setHidden(True)
 
+        hideEmall()
 
 
         self.personnel_recordsbtn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.personnel_records_page))
-        #Inactive_personnel_page
+        #placementpage_enlist
         self.inactivepersonnel_btn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.Inactive_personnel_page_01))
+        self.palcement_offr_btn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.Placement_page_officer_page))
+        self.placementenlist_btn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.placementpage_enlist_page))
+
+    
+
 
 
 
