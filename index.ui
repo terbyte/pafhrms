@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1368</width>
-    <height>814</height>
+    <width>1355</width>
+    <height>869</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
       <x>0</x>
       <y>80</y>
       <width>371</width>
-      <height>861</height>
+      <height>731</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -32,278 +32,815 @@ color:white
 }
 </string>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QVBoxLayout" name="verticalLayout_7">
      <item>
-      <widget class="QPushButton" name="personnel_recordsbtn">
-       <property name="font">
-        <font>
-         <family>Ubuntu Mono</family>
-         <pointsize>18</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>PERSONNEL RECORDS</string>
-       </property>
-       <property name="iconSize">
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="minimumSize">
         <size>
-         <width>30</width>
-         <height>30</height>
+         <width>0</width>
+         <height>500</height>
         </size>
        </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="placement_btn">
-       <property name="font">
-        <font>
-         <family>Ubuntu Mono</family>
-         <pointsize>18</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>PLACEMENT</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="checkable">
+       <property name="widgetResizable">
         <bool>true</bool>
        </property>
-       <property name="flat">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="reenlistment_btn">
-       <property name="font">
-        <font>
-         <family>Ubuntu Mono</family>
-         <pointsize>18</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>REENLISTMENT</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="schooling_btn">
-       <property name="font">
-        <font>
-         <family>Ubuntu Mono</family>
-         <pointsize>18</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>SCHOOLING</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="promotion_btn">
-       <property name="font">
-        <font>
-         <family>Ubuntu Mono</family>
-         <pointsize>18</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>PROMOTION</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="seniority_liner_btn">
-       <property name="font">
-        <font>
-         <family>Ubuntu Mono</family>
-         <pointsize>18</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>SENIORITY LINEAR LIST</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="afscmonitoring_btn">
-       <property name="font">
-        <font>
-         <family>Ubuntu Mono</family>
-         <pointsize>18</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>AFSC MONITORING</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="etad_sot_btn">
-       <property name="font">
-        <font>
-         <family>Ubuntu Mono</family>
-         <pointsize>18</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>ETAD / SOT</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="attrition_btn">
-       <property name="font">
-        <font>
-         <family>Ubuntu Mono</family>
-         <pointsize>18</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>ATTRITION</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="inactivepersonnel_btn">
-       <property name="font">
-        <font>
-         <family>Ubuntu Mono</family>
-         <pointsize>18</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true"/>
-       </property>
-       <property name="text">
-        <string>INACTIVE PERSONNEL</string>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>30</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>337</width>
+          <height>1521</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QFrame" name="frame_4">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QPushButton" name="personnel_recordsbtn">
+              <property name="font">
+               <font>
+                <family>Ubuntu Mono</family>
+                <pointsize>18</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>PERSONNEL RECORDS</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="placement_btn">
+              <property name="font">
+               <font>
+                <family>Ubuntu Mono</family>
+                <pointsize>18</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>PLACEMENT</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="placement_dropdown">
+              <property name="styleSheet">
+               <string notr="true">QWidget{
+
+background-color: rgb(24, 45	, 52);
+color:white
+
+}
+</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QPushButton" name="pushButton_25">
+                 <property name="text">
+                  <string>OFFICER</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_27">
+                 <property name="text">
+                  <string>DS MONITORING</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_26">
+                 <property name="text">
+                  <string>ENLISTED PERSONNEL</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_28">
+                 <property name="text">
+                  <string>PERSONNEL MONITORING</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="reenlistment_btn">
+              <property name="font">
+               <font>
+                <family>Ubuntu Mono</family>
+                <pointsize>18</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>REENLISTMENT</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="reenlistmen_dropdown">
+              <property name="styleSheet">
+               <string notr="true">QWidget{
+
+background-color: rgb(24, 45	, 52);
+color:white
+
+}
+</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_3">
+               <item>
+                <widget class="QPushButton" name="pushButton_30">
+                 <property name="text">
+                  <string>1ST TRANCHE</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_31">
+                 <property name="text">
+                  <string>2ND TRANCHE/RE-ENLISTMENT</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_32">
+                 <property name="text">
+                  <string>FOR MEDICAL</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_33">
+                 <property name="text">
+                  <string>EXPIRED ETE</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="schooling_btn">
+              <property name="font">
+               <font>
+                <family>Ubuntu Mono</family>
+                <pointsize>18</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>SCHOOLING</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="seniority_dropdown">
+              <property name="styleSheet">
+               <string notr="true">QWidget{
+
+background-color: rgb(24, 45	, 52);
+color:white
+
+}
+</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_15">
+               <item>
+                <widget class="QPushButton" name="pushButton_46">
+                 <property name="text">
+                  <string>OFFICER</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="officerschooling_dropdown">
+                 <property name="styleSheet">
+                  <string notr="true">QWidget{
+
+background-color: rgb(24, 45	, 52);
+color:white
+
+}
+</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_17">
+                  <item>
+                   <widget class="QPushButton" name="pushButton_48">
+                    <property name="text">
+                     <string>CGSC</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_49">
+                    <property name="text">
+                     <string>SOC</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_50">
+                    <property name="text">
+                     <string>BAFOC</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_47">
+                 <property name="text">
+                  <string>ENLISTED PERSONNEL</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="elinstschooling_dropdown">
+                 <property name="styleSheet">
+                  <string notr="true">QWidget{
+
+background-color: rgb(24, 45	, 52);
+color:white
+
+}
+</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_19">
+                  <item>
+                   <widget class="QPushButton" name="pushButton_52">
+                    <property name="text">
+                     <string>ANCOC</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_53">
+                    <property name="text">
+                     <string>BNCOC</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_51">
+                    <property name="text">
+                     <string>SMC</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_54">
+                    <property name="text">
+                     <string>BMT</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="promotion_btn">
+              <property name="font">
+               <font>
+                <family>Ubuntu Mono</family>
+                <pointsize>18</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>PROMOTION</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="promotion_dropdown">
+              <property name="styleSheet">
+               <string notr="true">QWidget{
+
+background-color: rgb(24, 45	, 52);
+color:white
+
+}
+</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <widget class="QPushButton" name="pushButton_40">
+                 <property name="text">
+                  <string>OFFICER</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_41">
+                 <property name="text">
+                  <string>ENLISTED PERSONNEL</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="seniority_liner_btn">
+              <property name="font">
+               <font>
+                <family>Ubuntu Mono</family>
+                <pointsize>18</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>SENIORITY LINEAR LIST</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="schooling_dropdown">
+              <property name="styleSheet">
+               <string notr="true">QWidget{
+
+background-color: rgb(24, 45	, 52);
+color:white
+
+}
+</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <item>
+                <widget class="QPushButton" name="pushButton_36">
+                 <property name="text">
+                  <string>OFFICER</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_37">
+                 <property name="text">
+                  <string>ENLISTED PERSONNEL</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="afscmonitoring_btn">
+              <property name="font">
+               <font>
+                <family>Ubuntu Mono</family>
+                <pointsize>18</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>AFSC MONITORING</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="afsc_monitoring_dropdown">
+              <property name="styleSheet">
+               <string notr="true">QWidget{
+
+background-color: rgb(24, 45	, 52);
+color:white
+
+}
+</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_11">
+               <item>
+                <widget class="QPushButton" name="pushButton_42">
+                 <property name="text">
+                  <string>PRIORITY COURSES</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_43">
+                 <property name="text">
+                  <string>BY UNIT</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="etad_sot_btn">
+              <property name="font">
+               <font>
+                <family>Ubuntu Mono</family>
+                <pointsize>18</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>ETAD / SOT</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="etad_SOT_dropdown">
+              <property name="styleSheet">
+               <string notr="true">QWidget{
+
+background-color: rgb(24, 45	, 52);
+color:white
+
+}
+</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_13">
+               <item>
+                <widget class="QPushButton" name="pushButton_34">
+                 <property name="text">
+                  <string>SOT</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_35">
+                 <property name="text">
+                  <string>2ND ETAD</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_44">
+                 <property name="text">
+                  <string>1ST ETAD</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_45">
+                 <property name="text">
+                  <string>PROVISIONAL</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="attrition_btn">
+              <property name="font">
+               <font>
+                <family>Ubuntu Mono</family>
+                <pointsize>18</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>ATTRITION</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="attrition_dropdown">
+              <property name="styleSheet">
+               <string notr="true">QWidget{
+
+background-color: rgb(24, 45	, 52);
+color:white
+
+}
+</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_16">
+               <item>
+                <widget class="QPushButton" name="pushButton_55">
+                 <property name="text">
+                  <string>OFFICER</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton_56">
+                 <property name="text">
+                  <string>ENLISTED PERSONNEL</string>
+                 </property>
+                 <property name="checkable">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="inactivepersonnel_btn">
+              <property name="font">
+               <font>
+                <family>Ubuntu Mono</family>
+                <pointsize>18</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="text">
+               <string>INACTIVE PERSONNEL</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>30</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
       </widget>
      </item>
      <item>
@@ -314,7 +851,7 @@ color:white
        <property name="sizeHint" stdset="0">
         <size>
          <width>20</width>
-         <height>450</height>
+         <height>204</height>
         </size>
        </property>
       </spacer>
@@ -332,7 +869,8 @@ color:white
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:#f8f9fa;
-</string>
+
+color:Black</string>
     </property>
     <widget class="QStackedWidget" name="stackedWidget">
      <property name="geometry">
@@ -346,7 +884,7 @@ color:white
      <property name="currentIndex">
       <number>0</number>
      </property>
-     <widget class="QWidget" name="page">
+     <widget class="QWidget" name="personnel_records_page">
       <widget class="QLabel" name="label_4">
        <property name="geometry">
         <rect>
@@ -665,7 +1203,7 @@ color:white;</string>
         <enum>Qt::SolidLine</enum>
        </property>
        <attribute name="horizontalHeaderVisible">
-        <bool>true</bool>
+        <bool>false</bool>
        </attribute>
        <attribute name="horizontalHeaderCascadingSectionResizes">
         <bool>false</bool>
@@ -691,6 +1229,11 @@ color:white;</string>
        <column>
         <property name="text">
          <string>FULL NAME</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>UNIT</string>
         </property>
        </column>
        <column>
@@ -860,24 +1403,577 @@ color:white;</string>
        </property>
       </widget>
      </widget>
-     <widget class="QWidget" name="page_10">
-      <widget class="QLabel" name="label_13">
+     <widget class="QWidget" name="Inactive_personnel_page_01">
+      <widget class="QStackedWidget" name="stackedWidget_2">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>60</y>
-         <width>401</width>
-         <height>51</height>
+         <x>0</x>
+         <y>0</y>
+         <width>911</width>
+         <height>731</height>
         </rect>
        </property>
-       <property name="font">
-        <font>
-         <pointsize>27</pointsize>
-        </font>
+       <property name="currentIndex">
+        <number>0</number>
        </property>
-       <property name="text">
-        <string>INACTIVE PERSONNEL</string>
-       </property>
+       <widget class="QWidget" name="Inactive_personnel_page">
+        <widget class="QLabel" name="label_33">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>921</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:white;
+background-color: rgb(98, 160, 234);</string>
+         </property>
+         <property name="text">
+          <string>ACTIVE PERSONNEL RECORDS</string>
+         </property>
+        </widget>
+        <widget class="QFrame" name="frame_5">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>50</y>
+           <width>911</width>
+           <height>201</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QFrame" name="frame_8">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="lineEdit_19"/>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLineEdit" name="lineEdit_20"/>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_34">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:black</string>
+               </property>
+               <property name="text">
+                <string>Middle Name</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLineEdit" name="lineEdit_21"/>
+             </item>
+             <item row="1" column="3">
+              <widget class="QLineEdit" name="lineEdit_22">
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_35">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:black</string>
+               </property>
+               <property name="text">
+                <string>Last Name</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="label_36">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true"/>
+               </property>
+               <property name="text">
+                <string>Sufffix</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_37">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:black</string>
+               </property>
+               <property name="text">
+                <string>First Name</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="frame_9">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="lineEdit_23">
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_38">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:black</string>
+               </property>
+               <property name="text">
+                <string>AFPSN</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="3">
+              <widget class="QLineEdit" name="lineEdit_24"/>
+             </item>
+             <item row="3" column="4">
+              <widget class="QLineEdit" name="lineEdit_25"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLineEdit" name="lineEdit_26">
+               <property name="maximumSize">
+                <size>
+                 <width>150</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QLineEdit" name="lineEdit_27"/>
+             </item>
+             <item row="0" column="4">
+              <widget class="QLabel" name="label_39">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:black</string>
+               </property>
+               <property name="text">
+                <string>Sex</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLabel" name="label_40">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:black</string>
+               </property>
+               <property name="text">
+                <string>Source of Enlistment</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLabel" name="label_41">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:black</string>
+               </property>
+               <property name="text">
+                <string>Rank</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="label_42">
+               <property name="font">
+                <font>
+                 <pointsize>15</pointsize>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color:black</string>
+               </property>
+               <property name="text">
+                <string>Classification</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="label_43">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>270</y>
+           <width>921</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>18</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(98, 160, 234);
+
+color:white;</string>
+         </property>
+         <property name="text">
+          <string>SEARCH</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+        <widget class="QTableWidget" name="PersonnelRecords_table_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>320</y>
+           <width>911</width>
+           <height>401</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:black</string>
+         </property>
+         <property name="showGrid">
+          <bool>false</bool>
+         </property>
+         <property name="gridStyle">
+          <enum>Qt::SolidLine</enum>
+         </property>
+         <attribute name="horizontalHeaderVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderCascadingSectionResizes">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>181</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>NR</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>AFPSN</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>RANK</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>FULL NAME</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>UNIT</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ACTION</string>
+          </property>
+         </column>
+        </widget>
+        <widget class="QLabel" name="label_13">
+         <property name="geometry">
+          <rect>
+           <x>360</x>
+           <y>0</y>
+           <width>431</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>27</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>INACTIVE PERSONNEL</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_12">
+        <widget class="QLabel" name="label_44">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>50</y>
+           <width>371</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>27</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>PLACEMENT</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_13">
+        <widget class="QLabel" name="label_45">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>20</y>
+           <width>401</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>27</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>REENLISTMENT</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_14">
+        <widget class="QLabel" name="label_46">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>50</y>
+           <width>401</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>27</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>SCHOOLING</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_15">
+        <widget class="QLabel" name="label_47">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>40</y>
+           <width>401</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>27</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>PROMOTION</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_16">
+        <widget class="QLabel" name="label_48">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>50</y>
+           <width>401</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>27</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>SENIORITY LINEAR LIST</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_17">
+        <widget class="QLabel" name="label_49">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>60</y>
+           <width>401</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>27</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>AFSC MONITORING</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_18">
+        <widget class="QLabel" name="label_50">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>50</y>
+           <width>401</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>27</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>ETAD / SOT</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_19">
+        <widget class="QLabel" name="label_51">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>60</y>
+           <width>401</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>27</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>ATTRITION</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="page_20">
+        <widget class="QLabel" name="label_52">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>60</y>
+           <width>401</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>27</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>INACTIVE PERSONNEL</string>
+         </property>
+        </widget>
+       </widget>
       </widget>
      </widget>
     </widget>
@@ -887,7 +1983,7 @@ color:white;</string>
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1331</width>
+      <width>1351</width>
       <height>81</height>
      </rect>
     </property>
@@ -986,579 +2082,9 @@ color:white;
      </property>
     </widget>
    </widget>
-   <widget class="QFrame" name="placement_dropdown">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>80</y>
-      <width>241</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget{
-
-background-color: rgb(24, 45	, 52);
-color:white
-
-}
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QPushButton" name="pushButton_25">
-       <property name="text">
-        <string>OFFICER</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_27">
-       <property name="text">
-        <string>DS MONITORING</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_26">
-       <property name="text">
-        <string>ENLISTED PERSONNEL</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_28">
-       <property name="text">
-        <string>PERSONNEL MONITORING</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QFrame" name="reenlistmen_dropdown">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>120</y>
-      <width>321</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget{
-
-background-color: rgb(24, 45	, 52);
-color:white
-
-}
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_3">
-     <item>
-      <widget class="QPushButton" name="pushButton_30">
-       <property name="text">
-        <string>1ST TRANCHE</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_31">
-       <property name="text">
-        <string>2ND TRANCHE/RE-ENLISTMENT</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_32">
-       <property name="text">
-        <string>FOR MEDICAL</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_33">
-       <property name="text">
-        <string>EXPIRED ETE</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QFrame" name="schooling_dropdown">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>170</y>
-      <width>281</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget{
-
-background-color: rgb(24, 45	, 52);
-color:white
-
-}
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_5">
-     <item>
-      <widget class="QPushButton" name="pushButton_36">
-       <property name="text">
-        <string>OFFICER</string>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_37">
-       <property name="text">
-        <string>ENLISTED PERSONNEL</string>
-       </property>
-       <property name="checkable">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QFrame" name="elinstschooling_dropdown">
-    <property name="geometry">
-     <rect>
-      <x>640</x>
-      <y>150</y>
-      <width>281</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget{
-
-background-color: rgb(24, 45	, 52);
-color:white
-
-}
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_19">
-     <item>
-      <widget class="QPushButton" name="pushButton_52">
-       <property name="text">
-        <string>ANCOC</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_53">
-       <property name="text">
-        <string>BNCOC</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_51">
-       <property name="text">
-        <string>SMC</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_54">
-       <property name="text">
-        <string>BMT</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QFrame" name="officerschooling_dropdown">
-    <property name="geometry">
-     <rect>
-      <x>640</x>
-      <y>150</y>
-      <width>281</width>
-      <height>151</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget{
-
-background-color: rgb(24, 45	, 52);
-color:white
-
-}
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_17">
-     <item>
-      <widget class="QPushButton" name="pushButton_48">
-       <property name="text">
-        <string>CGSC</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_49">
-       <property name="text">
-        <string>SOC</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_50">
-       <property name="text">
-        <string>BAFOC</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QFrame" name="afsc_monitoring_dropdown">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>290</y>
-      <width>281</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget{
-
-background-color: rgb(24, 45	, 52);
-color:white
-
-}
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_11">
-     <item>
-      <widget class="QPushButton" name="pushButton_42">
-       <property name="text">
-        <string>PRIORITY COURSES</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_43">
-       <property name="text">
-        <string>BY UNIT</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QFrame" name="promotion_dropdown">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>210</y>
-      <width>281</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget{
-
-background-color: rgb(24, 45	, 52);
-color:white
-
-}
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_9">
-     <item>
-      <widget class="QPushButton" name="pushButton_40">
-       <property name="text">
-        <string>OFFICER</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_41">
-       <property name="text">
-        <string>ENLISTED PERSONNEL</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QFrame" name="etad_SOT_dropdown">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>250</y>
-      <width>281</width>
-      <height>191</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget{
-
-background-color: rgb(24, 45	, 52);
-color:white
-
-}
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_13">
-     <item>
-      <widget class="QPushButton" name="pushButton_34">
-       <property name="text">
-        <string>SOT</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_35">
-       <property name="text">
-        <string>2ND ETAD</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_44">
-       <property name="text">
-        <string>1ST ETAD</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_45">
-       <property name="text">
-        <string>PROVISIONAL</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QFrame" name="seniority_dropdown">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>250</y>
-      <width>281</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget{
-
-background-color: rgb(24, 45	, 52);
-color:white
-
-}
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_15">
-     <item>
-      <widget class="QPushButton" name="pushButton_46">
-       <property name="text">
-        <string>OFFICER</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_47">
-       <property name="text">
-        <string>ENLISTED PERSONNEL</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QFrame" name="attrition_dropdown">
-    <property name="geometry">
-     <rect>
-      <x>370</x>
-      <y>370</y>
-      <width>281</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">QWidget{
-
-background-color: rgb(24, 45	, 52);
-color:white
-
-}
-</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_16">
-     <item>
-      <widget class="QPushButton" name="pushButton_55">
-       <property name="text">
-        <string>OFFICER</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_56">
-       <property name="text">
-        <string>ENLISTED PERSONNEL</string>
-       </property>
-       <property name="checkable">
-        <bool>false</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <zorder>main_widget</zorder>
    <zorder>icon_text_widget</zorder>
    <zorder>top_widget</zorder>
-   <zorder>placement_dropdown</zorder>
-   <zorder>reenlistmen_dropdown</zorder>
-   <zorder>schooling_dropdown</zorder>
-   <zorder>elinstschooling_dropdown</zorder>
-   <zorder>officerschooling_dropdown</zorder>
-   <zorder>afsc_monitoring_dropdown</zorder>
-   <zorder>promotion_dropdown</zorder>
-   <zorder>etad_SOT_dropdown</zorder>
-   <zorder>seniority_dropdown</zorder>
-   <zorder>attrition_dropdown</zorder>
   </widget>
  </widget>
  <resources>
@@ -1572,12 +2098,12 @@ color:white
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>232</x>
-     <y>147</y>
+     <x>745</x>
+     <y>-899</y>
     </hint>
     <hint type="destinationlabel">
-     <x>380</x>
-     <y>157</y>
+     <x>761</x>
+     <y>-739</y>
     </hint>
    </hints>
   </connection>
@@ -1588,76 +2114,28 @@ color:white
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>247</x>
-     <y>195</y>
+     <x>631</x>
+     <y>-705</y>
     </hint>
     <hint type="destinationlabel">
-     <x>373</x>
-     <y>183</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_37</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>elinstschooling_dropdown</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>608</x>
-     <y>243</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>832</x>
-     <y>209</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_36</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>officerschooling_dropdown</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>591</x>
-     <y>205</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>650</x>
-     <y>201</y>
+     <x>667</x>
+     <y>-564</y>
     </hint>
    </hints>
   </connection>
   <connection>
    <sender>schooling_btn</sender>
    <signal>toggled(bool)</signal>
-   <receiver>schooling_dropdown</receiver>
+   <receiver>seniority_dropdown</receiver>
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>226</x>
-     <y>218</y>
+     <x>434</x>
+     <y>-535</y>
     </hint>
     <hint type="destinationlabel">
-     <x>377</x>
-     <y>234</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>afscmonitoring_btn</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>afsc_monitoring_dropdown</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>258</x>
-     <y>337</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>388</x>
-     <y>301</y>
+     <x>453</x>
+     <y>-260</y>
     </hint>
    </hints>
   </connection>
@@ -1668,28 +2146,76 @@ color:white
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>206</x>
-     <y>262</y>
+     <x>511</x>
+     <y>-164</y>
     </hint>
     <hint type="destinationlabel">
-     <x>450</x>
-     <y>212</y>
+     <x>636</x>
+     <y>-126</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_46</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>officerschooling_dropdown</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>722</x>
+     <y>-490</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>638</x>
+     <y>-375</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_47</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>elinstschooling_dropdown</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>695</x>
+     <y>-336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>487</x>
+     <y>-186</y>
     </hint>
    </hints>
   </connection>
   <connection>
    <sender>seniority_liner_btn</sender>
    <signal>toggled(bool)</signal>
-   <receiver>seniority_dropdown</receiver>
+   <receiver>schooling_dropdown</receiver>
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>291</x>
-     <y>301</y>
+     <x>446</x>
+     <y>-38</y>
     </hint>
     <hint type="destinationlabel">
-     <x>445</x>
-     <y>253</y>
+     <x>598</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>afscmonitoring_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>afsc_monitoring_dropdown</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>580</x>
+     <y>78</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>641</x>
+     <y>126</y>
     </hint>
    </hints>
   </connection>
@@ -1700,12 +2226,12 @@ color:white
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>328</x>
-     <y>385</y>
+     <x>500</x>
+     <y>204</y>
     </hint>
     <hint type="destinationlabel">
-     <x>382</x>
-     <y>426</y>
+     <x>550</x>
+     <y>243</y>
     </hint>
    </hints>
   </connection>
@@ -1716,12 +2242,12 @@ color:white
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>294</x>
-     <y>419</y>
+     <x>605</x>
+     <y>389</y>
     </hint>
     <hint type="destinationlabel">
-     <x>417</x>
-     <y>377</y>
+     <x>620</x>
+     <y>718</y>
     </hint>
    </hints>
   </connection>

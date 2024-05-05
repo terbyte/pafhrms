@@ -1,6 +1,8 @@
 from PySide6.QtWidgets import QMainWindow,QMenu
 from PySide6.QtGui import QAction
+# from ui_index import Ui_MainWindow
 from ui_index import Ui_MainWindow
+
 
 
 class MySideBar(QMainWindow,Ui_MainWindow):
@@ -24,9 +26,9 @@ class MySideBar(QMainWindow,Ui_MainWindow):
 
 
 
-        self.personnel_recordsbtn.clicked.connect(lambda: self.stackedWidget.setCurrentIndex(0))
-        
-        self.inactivepersonnel_btn.clicked.connect(lambda: self.stackedWidget.setCurrentIndex(2))
+        self.personnel_recordsbtn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.personnel_records_page))
+        #Inactive_personnel_page
+        self.inactivepersonnel_btn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.Inactive_personnel_page_01))
 
 
 

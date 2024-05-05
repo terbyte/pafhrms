@@ -17,20 +17,20 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHeaderView,
     QLabel, QLineEdit, QMainWindow, QPushButton,
-    QSizePolicy, QSpacerItem, QStackedWidget, QTableWidget,
-    QTableWidgetItem, QVBoxLayout, QWidget)
+    QScrollArea, QSizePolicy, QSpacerItem, QStackedWidget,
+    QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
 import resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1368, 814)
+        MainWindow.resize(1355, 869)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.icon_text_widget = QWidget(self.centralwidget)
         self.icon_text_widget.setObjectName(u"icon_text_widget")
-        self.icon_text_widget.setGeometry(QRect(0, 80, 371, 861))
+        self.icon_text_widget.setGeometry(QRect(0, 80, 371, 731))
         self.icon_text_widget.setStyleSheet(u"QWidget{\n"
 "\n"
 "background-color: rgb(24, 45	, 52);\n"
@@ -38,9 +38,24 @@ class Ui_MainWindow(object):
 "\n"
 "}\n"
 "")
-        self.verticalLayout = QVBoxLayout(self.icon_text_widget)
+        self.verticalLayout_7 = QVBoxLayout(self.icon_text_widget)
+        self.verticalLayout_7.setObjectName(u"verticalLayout_7")
+        self.scrollArea = QScrollArea(self.icon_text_widget)
+        self.scrollArea.setObjectName(u"scrollArea")
+        self.scrollArea.setMinimumSize(QSize(0, 500))
+        self.scrollArea.setWidgetResizable(True)
+        self.scrollAreaWidgetContents = QWidget()
+        self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 337, 1521))
+        self.verticalLayout = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.personnel_recordsbtn = QPushButton(self.icon_text_widget)
+        self.frame_4 = QFrame(self.scrollAreaWidgetContents)
+        self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setFrameShape(QFrame.StyledPanel)
+        self.frame_4.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_6 = QVBoxLayout(self.frame_4)
+        self.verticalLayout_6.setObjectName(u"verticalLayout_6")
+        self.personnel_recordsbtn = QPushButton(self.frame_4)
         self.personnel_recordsbtn.setObjectName(u"personnel_recordsbtn")
         font = QFont()
         font.setFamilies([u"Ubuntu Mono"])
@@ -51,9 +66,9 @@ class Ui_MainWindow(object):
         self.personnel_recordsbtn.setIconSize(QSize(30, 30))
         self.personnel_recordsbtn.setCheckable(False)
 
-        self.verticalLayout.addWidget(self.personnel_recordsbtn)
+        self.verticalLayout_6.addWidget(self.personnel_recordsbtn)
 
-        self.placement_btn = QPushButton(self.icon_text_widget)
+        self.placement_btn = QPushButton(self.frame_4)
         self.placement_btn.setObjectName(u"placement_btn")
         self.placement_btn.setFont(font)
         self.placement_btn.setStyleSheet(u"")
@@ -61,102 +76,444 @@ class Ui_MainWindow(object):
         self.placement_btn.setCheckable(True)
         self.placement_btn.setFlat(False)
 
-        self.verticalLayout.addWidget(self.placement_btn)
+        self.verticalLayout_6.addWidget(self.placement_btn)
 
-        self.reenlistment_btn = QPushButton(self.icon_text_widget)
+        self.placement_dropdown = QFrame(self.frame_4)
+        self.placement_dropdown.setObjectName(u"placement_dropdown")
+        self.placement_dropdown.setStyleSheet(u"QWidget{\n"
+"\n"
+"background-color: rgb(24, 45	, 52);\n"
+"color:white\n"
+"\n"
+"}\n"
+"")
+        self.placement_dropdown.setFrameShape(QFrame.StyledPanel)
+        self.placement_dropdown.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_2 = QVBoxLayout(self.placement_dropdown)
+        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
+        self.pushButton_25 = QPushButton(self.placement_dropdown)
+        self.pushButton_25.setObjectName(u"pushButton_25")
+        self.pushButton_25.setCheckable(False)
+
+        self.verticalLayout_2.addWidget(self.pushButton_25)
+
+        self.pushButton_27 = QPushButton(self.placement_dropdown)
+        self.pushButton_27.setObjectName(u"pushButton_27")
+        self.pushButton_27.setCheckable(False)
+
+        self.verticalLayout_2.addWidget(self.pushButton_27)
+
+        self.pushButton_26 = QPushButton(self.placement_dropdown)
+        self.pushButton_26.setObjectName(u"pushButton_26")
+        self.pushButton_26.setCheckable(False)
+
+        self.verticalLayout_2.addWidget(self.pushButton_26)
+
+        self.pushButton_28 = QPushButton(self.placement_dropdown)
+        self.pushButton_28.setObjectName(u"pushButton_28")
+        self.pushButton_28.setCheckable(False)
+
+        self.verticalLayout_2.addWidget(self.pushButton_28)
+
+
+        self.verticalLayout_6.addWidget(self.placement_dropdown)
+
+        self.reenlistment_btn = QPushButton(self.frame_4)
         self.reenlistment_btn.setObjectName(u"reenlistment_btn")
         self.reenlistment_btn.setFont(font)
         self.reenlistment_btn.setStyleSheet(u"")
         self.reenlistment_btn.setIconSize(QSize(30, 30))
         self.reenlistment_btn.setCheckable(True)
 
-        self.verticalLayout.addWidget(self.reenlistment_btn)
+        self.verticalLayout_6.addWidget(self.reenlistment_btn)
 
-        self.schooling_btn = QPushButton(self.icon_text_widget)
+        self.reenlistmen_dropdown = QFrame(self.frame_4)
+        self.reenlistmen_dropdown.setObjectName(u"reenlistmen_dropdown")
+        self.reenlistmen_dropdown.setStyleSheet(u"QWidget{\n"
+"\n"
+"background-color: rgb(24, 45	, 52);\n"
+"color:white\n"
+"\n"
+"}\n"
+"")
+        self.reenlistmen_dropdown.setFrameShape(QFrame.StyledPanel)
+        self.reenlistmen_dropdown.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_3 = QVBoxLayout(self.reenlistmen_dropdown)
+        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
+        self.pushButton_30 = QPushButton(self.reenlistmen_dropdown)
+        self.pushButton_30.setObjectName(u"pushButton_30")
+        self.pushButton_30.setCheckable(False)
+
+        self.verticalLayout_3.addWidget(self.pushButton_30)
+
+        self.pushButton_31 = QPushButton(self.reenlistmen_dropdown)
+        self.pushButton_31.setObjectName(u"pushButton_31")
+        self.pushButton_31.setCheckable(False)
+
+        self.verticalLayout_3.addWidget(self.pushButton_31)
+
+        self.pushButton_32 = QPushButton(self.reenlistmen_dropdown)
+        self.pushButton_32.setObjectName(u"pushButton_32")
+        self.pushButton_32.setCheckable(False)
+
+        self.verticalLayout_3.addWidget(self.pushButton_32)
+
+        self.pushButton_33 = QPushButton(self.reenlistmen_dropdown)
+        self.pushButton_33.setObjectName(u"pushButton_33")
+        self.pushButton_33.setCheckable(False)
+
+        self.verticalLayout_3.addWidget(self.pushButton_33)
+
+
+        self.verticalLayout_6.addWidget(self.reenlistmen_dropdown)
+
+        self.schooling_btn = QPushButton(self.frame_4)
         self.schooling_btn.setObjectName(u"schooling_btn")
         self.schooling_btn.setFont(font)
         self.schooling_btn.setStyleSheet(u"")
         self.schooling_btn.setIconSize(QSize(30, 30))
         self.schooling_btn.setCheckable(True)
 
-        self.verticalLayout.addWidget(self.schooling_btn)
+        self.verticalLayout_6.addWidget(self.schooling_btn)
 
-        self.promotion_btn = QPushButton(self.icon_text_widget)
+        self.seniority_dropdown = QFrame(self.frame_4)
+        self.seniority_dropdown.setObjectName(u"seniority_dropdown")
+        self.seniority_dropdown.setStyleSheet(u"QWidget{\n"
+"\n"
+"background-color: rgb(24, 45	, 52);\n"
+"color:white\n"
+"\n"
+"}\n"
+"")
+        self.seniority_dropdown.setFrameShape(QFrame.StyledPanel)
+        self.seniority_dropdown.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_15 = QVBoxLayout(self.seniority_dropdown)
+        self.verticalLayout_15.setObjectName(u"verticalLayout_15")
+        self.pushButton_46 = QPushButton(self.seniority_dropdown)
+        self.pushButton_46.setObjectName(u"pushButton_46")
+        self.pushButton_46.setCheckable(True)
+
+        self.verticalLayout_15.addWidget(self.pushButton_46)
+
+        self.officerschooling_dropdown = QFrame(self.seniority_dropdown)
+        self.officerschooling_dropdown.setObjectName(u"officerschooling_dropdown")
+        self.officerschooling_dropdown.setStyleSheet(u"QWidget{\n"
+"\n"
+"background-color: rgb(24, 45	, 52);\n"
+"color:white\n"
+"\n"
+"}\n"
+"")
+        self.officerschooling_dropdown.setFrameShape(QFrame.StyledPanel)
+        self.officerschooling_dropdown.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_17 = QVBoxLayout(self.officerschooling_dropdown)
+        self.verticalLayout_17.setObjectName(u"verticalLayout_17")
+        self.pushButton_48 = QPushButton(self.officerschooling_dropdown)
+        self.pushButton_48.setObjectName(u"pushButton_48")
+        self.pushButton_48.setCheckable(False)
+
+        self.verticalLayout_17.addWidget(self.pushButton_48)
+
+        self.pushButton_49 = QPushButton(self.officerschooling_dropdown)
+        self.pushButton_49.setObjectName(u"pushButton_49")
+        self.pushButton_49.setCheckable(False)
+
+        self.verticalLayout_17.addWidget(self.pushButton_49)
+
+        self.pushButton_50 = QPushButton(self.officerschooling_dropdown)
+        self.pushButton_50.setObjectName(u"pushButton_50")
+        self.pushButton_50.setCheckable(False)
+
+        self.verticalLayout_17.addWidget(self.pushButton_50)
+
+
+        self.verticalLayout_15.addWidget(self.officerschooling_dropdown)
+
+        self.pushButton_47 = QPushButton(self.seniority_dropdown)
+        self.pushButton_47.setObjectName(u"pushButton_47")
+        self.pushButton_47.setCheckable(True)
+
+        self.verticalLayout_15.addWidget(self.pushButton_47)
+
+        self.elinstschooling_dropdown = QFrame(self.seniority_dropdown)
+        self.elinstschooling_dropdown.setObjectName(u"elinstschooling_dropdown")
+        self.elinstschooling_dropdown.setStyleSheet(u"QWidget{\n"
+"\n"
+"background-color: rgb(24, 45	, 52);\n"
+"color:white\n"
+"\n"
+"}\n"
+"")
+        self.elinstschooling_dropdown.setFrameShape(QFrame.StyledPanel)
+        self.elinstschooling_dropdown.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_19 = QVBoxLayout(self.elinstschooling_dropdown)
+        self.verticalLayout_19.setObjectName(u"verticalLayout_19")
+        self.pushButton_52 = QPushButton(self.elinstschooling_dropdown)
+        self.pushButton_52.setObjectName(u"pushButton_52")
+        self.pushButton_52.setCheckable(False)
+
+        self.verticalLayout_19.addWidget(self.pushButton_52)
+
+        self.pushButton_53 = QPushButton(self.elinstschooling_dropdown)
+        self.pushButton_53.setObjectName(u"pushButton_53")
+        self.pushButton_53.setCheckable(False)
+
+        self.verticalLayout_19.addWidget(self.pushButton_53)
+
+        self.pushButton_51 = QPushButton(self.elinstschooling_dropdown)
+        self.pushButton_51.setObjectName(u"pushButton_51")
+        self.pushButton_51.setCheckable(False)
+
+        self.verticalLayout_19.addWidget(self.pushButton_51)
+
+        self.pushButton_54 = QPushButton(self.elinstschooling_dropdown)
+        self.pushButton_54.setObjectName(u"pushButton_54")
+        self.pushButton_54.setCheckable(False)
+
+        self.verticalLayout_19.addWidget(self.pushButton_54)
+
+
+        self.verticalLayout_15.addWidget(self.elinstschooling_dropdown)
+
+
+        self.verticalLayout_6.addWidget(self.seniority_dropdown)
+
+        self.promotion_btn = QPushButton(self.frame_4)
         self.promotion_btn.setObjectName(u"promotion_btn")
         self.promotion_btn.setFont(font)
         self.promotion_btn.setStyleSheet(u"")
         self.promotion_btn.setIconSize(QSize(30, 30))
         self.promotion_btn.setCheckable(True)
 
-        self.verticalLayout.addWidget(self.promotion_btn)
+        self.verticalLayout_6.addWidget(self.promotion_btn)
 
-        self.seniority_liner_btn = QPushButton(self.icon_text_widget)
+        self.promotion_dropdown = QFrame(self.frame_4)
+        self.promotion_dropdown.setObjectName(u"promotion_dropdown")
+        self.promotion_dropdown.setStyleSheet(u"QWidget{\n"
+"\n"
+"background-color: rgb(24, 45	, 52);\n"
+"color:white\n"
+"\n"
+"}\n"
+"")
+        self.promotion_dropdown.setFrameShape(QFrame.StyledPanel)
+        self.promotion_dropdown.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_9 = QVBoxLayout(self.promotion_dropdown)
+        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.pushButton_40 = QPushButton(self.promotion_dropdown)
+        self.pushButton_40.setObjectName(u"pushButton_40")
+        self.pushButton_40.setCheckable(False)
+
+        self.verticalLayout_9.addWidget(self.pushButton_40)
+
+        self.pushButton_41 = QPushButton(self.promotion_dropdown)
+        self.pushButton_41.setObjectName(u"pushButton_41")
+        self.pushButton_41.setCheckable(False)
+
+        self.verticalLayout_9.addWidget(self.pushButton_41)
+
+
+        self.verticalLayout_6.addWidget(self.promotion_dropdown)
+
+        self.seniority_liner_btn = QPushButton(self.frame_4)
         self.seniority_liner_btn.setObjectName(u"seniority_liner_btn")
         self.seniority_liner_btn.setFont(font)
         self.seniority_liner_btn.setStyleSheet(u"")
         self.seniority_liner_btn.setIconSize(QSize(30, 30))
         self.seniority_liner_btn.setCheckable(True)
 
-        self.verticalLayout.addWidget(self.seniority_liner_btn)
+        self.verticalLayout_6.addWidget(self.seniority_liner_btn)
 
-        self.afscmonitoring_btn = QPushButton(self.icon_text_widget)
+        self.schooling_dropdown = QFrame(self.frame_4)
+        self.schooling_dropdown.setObjectName(u"schooling_dropdown")
+        self.schooling_dropdown.setStyleSheet(u"QWidget{\n"
+"\n"
+"background-color: rgb(24, 45	, 52);\n"
+"color:white\n"
+"\n"
+"}\n"
+"")
+        self.schooling_dropdown.setFrameShape(QFrame.StyledPanel)
+        self.schooling_dropdown.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_5 = QVBoxLayout(self.schooling_dropdown)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.pushButton_36 = QPushButton(self.schooling_dropdown)
+        self.pushButton_36.setObjectName(u"pushButton_36")
+        self.pushButton_36.setCheckable(True)
+
+        self.verticalLayout_5.addWidget(self.pushButton_36)
+
+        self.pushButton_37 = QPushButton(self.schooling_dropdown)
+        self.pushButton_37.setObjectName(u"pushButton_37")
+        self.pushButton_37.setCheckable(True)
+
+        self.verticalLayout_5.addWidget(self.pushButton_37)
+
+
+        self.verticalLayout_6.addWidget(self.schooling_dropdown)
+
+        self.afscmonitoring_btn = QPushButton(self.frame_4)
         self.afscmonitoring_btn.setObjectName(u"afscmonitoring_btn")
         self.afscmonitoring_btn.setFont(font)
         self.afscmonitoring_btn.setStyleSheet(u"")
         self.afscmonitoring_btn.setIconSize(QSize(30, 30))
         self.afscmonitoring_btn.setCheckable(True)
 
-        self.verticalLayout.addWidget(self.afscmonitoring_btn)
+        self.verticalLayout_6.addWidget(self.afscmonitoring_btn)
 
-        self.etad_sot_btn = QPushButton(self.icon_text_widget)
+        self.afsc_monitoring_dropdown = QFrame(self.frame_4)
+        self.afsc_monitoring_dropdown.setObjectName(u"afsc_monitoring_dropdown")
+        self.afsc_monitoring_dropdown.setStyleSheet(u"QWidget{\n"
+"\n"
+"background-color: rgb(24, 45	, 52);\n"
+"color:white\n"
+"\n"
+"}\n"
+"")
+        self.afsc_monitoring_dropdown.setFrameShape(QFrame.StyledPanel)
+        self.afsc_monitoring_dropdown.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_11 = QVBoxLayout(self.afsc_monitoring_dropdown)
+        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
+        self.pushButton_42 = QPushButton(self.afsc_monitoring_dropdown)
+        self.pushButton_42.setObjectName(u"pushButton_42")
+        self.pushButton_42.setCheckable(False)
+
+        self.verticalLayout_11.addWidget(self.pushButton_42)
+
+        self.pushButton_43 = QPushButton(self.afsc_monitoring_dropdown)
+        self.pushButton_43.setObjectName(u"pushButton_43")
+        self.pushButton_43.setCheckable(False)
+
+        self.verticalLayout_11.addWidget(self.pushButton_43)
+
+
+        self.verticalLayout_6.addWidget(self.afsc_monitoring_dropdown)
+
+        self.etad_sot_btn = QPushButton(self.frame_4)
         self.etad_sot_btn.setObjectName(u"etad_sot_btn")
         self.etad_sot_btn.setFont(font)
         self.etad_sot_btn.setStyleSheet(u"")
         self.etad_sot_btn.setIconSize(QSize(30, 30))
         self.etad_sot_btn.setCheckable(True)
 
-        self.verticalLayout.addWidget(self.etad_sot_btn)
+        self.verticalLayout_6.addWidget(self.etad_sot_btn)
 
-        self.attrition_btn = QPushButton(self.icon_text_widget)
+        self.etad_SOT_dropdown = QFrame(self.frame_4)
+        self.etad_SOT_dropdown.setObjectName(u"etad_SOT_dropdown")
+        self.etad_SOT_dropdown.setStyleSheet(u"QWidget{\n"
+"\n"
+"background-color: rgb(24, 45	, 52);\n"
+"color:white\n"
+"\n"
+"}\n"
+"")
+        self.etad_SOT_dropdown.setFrameShape(QFrame.StyledPanel)
+        self.etad_SOT_dropdown.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_13 = QVBoxLayout(self.etad_SOT_dropdown)
+        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
+        self.pushButton_34 = QPushButton(self.etad_SOT_dropdown)
+        self.pushButton_34.setObjectName(u"pushButton_34")
+        self.pushButton_34.setCheckable(False)
+
+        self.verticalLayout_13.addWidget(self.pushButton_34)
+
+        self.pushButton_35 = QPushButton(self.etad_SOT_dropdown)
+        self.pushButton_35.setObjectName(u"pushButton_35")
+        self.pushButton_35.setCheckable(False)
+
+        self.verticalLayout_13.addWidget(self.pushButton_35)
+
+        self.pushButton_44 = QPushButton(self.etad_SOT_dropdown)
+        self.pushButton_44.setObjectName(u"pushButton_44")
+        self.pushButton_44.setCheckable(False)
+
+        self.verticalLayout_13.addWidget(self.pushButton_44)
+
+        self.pushButton_45 = QPushButton(self.etad_SOT_dropdown)
+        self.pushButton_45.setObjectName(u"pushButton_45")
+        self.pushButton_45.setCheckable(False)
+
+        self.verticalLayout_13.addWidget(self.pushButton_45)
+
+
+        self.verticalLayout_6.addWidget(self.etad_SOT_dropdown)
+
+        self.attrition_btn = QPushButton(self.frame_4)
         self.attrition_btn.setObjectName(u"attrition_btn")
         self.attrition_btn.setFont(font)
         self.attrition_btn.setStyleSheet(u"")
         self.attrition_btn.setIconSize(QSize(30, 30))
         self.attrition_btn.setCheckable(True)
 
-        self.verticalLayout.addWidget(self.attrition_btn)
+        self.verticalLayout_6.addWidget(self.attrition_btn)
 
-        self.inactivepersonnel_btn = QPushButton(self.icon_text_widget)
+        self.attrition_dropdown = QFrame(self.frame_4)
+        self.attrition_dropdown.setObjectName(u"attrition_dropdown")
+        self.attrition_dropdown.setStyleSheet(u"QWidget{\n"
+"\n"
+"background-color: rgb(24, 45	, 52);\n"
+"color:white\n"
+"\n"
+"}\n"
+"")
+        self.attrition_dropdown.setFrameShape(QFrame.StyledPanel)
+        self.attrition_dropdown.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_16 = QVBoxLayout(self.attrition_dropdown)
+        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
+        self.pushButton_55 = QPushButton(self.attrition_dropdown)
+        self.pushButton_55.setObjectName(u"pushButton_55")
+        self.pushButton_55.setCheckable(False)
+
+        self.verticalLayout_16.addWidget(self.pushButton_55)
+
+        self.pushButton_56 = QPushButton(self.attrition_dropdown)
+        self.pushButton_56.setObjectName(u"pushButton_56")
+        self.pushButton_56.setCheckable(False)
+
+        self.verticalLayout_16.addWidget(self.pushButton_56)
+
+
+        self.verticalLayout_6.addWidget(self.attrition_dropdown)
+
+        self.inactivepersonnel_btn = QPushButton(self.frame_4)
         self.inactivepersonnel_btn.setObjectName(u"inactivepersonnel_btn")
         self.inactivepersonnel_btn.setFont(font)
         self.inactivepersonnel_btn.setStyleSheet(u"")
         self.inactivepersonnel_btn.setIconSize(QSize(30, 30))
         self.inactivepersonnel_btn.setCheckable(False)
 
-        self.verticalLayout.addWidget(self.inactivepersonnel_btn)
+        self.verticalLayout_6.addWidget(self.inactivepersonnel_btn)
 
-        self.verticalSpacer = QSpacerItem(20, 450, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
-        self.verticalLayout.addItem(self.verticalSpacer)
+        self.verticalLayout.addWidget(self.frame_4)
+
+        self.scrollArea.setWidget(self.scrollAreaWidgetContents)
+
+        self.verticalLayout_7.addWidget(self.scrollArea)
+
+        self.verticalSpacer = QSpacerItem(20, 204, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
+
+        self.verticalLayout_7.addItem(self.verticalSpacer)
 
         self.main_widget = QWidget(self.centralwidget)
         self.main_widget.setObjectName(u"main_widget")
         self.main_widget.setGeometry(QRect(370, 80, 941, 971))
         self.main_widget.setStyleSheet(u"background-color:#f8f9fa;\n"
-"")
+"\n"
+"color:Black")
         self.stackedWidget = QStackedWidget(self.main_widget)
         self.stackedWidget.setObjectName(u"stackedWidget")
         self.stackedWidget.setGeometry(QRect(10, 10, 911, 731))
-        self.page = QWidget()
-        self.page.setObjectName(u"page")
-        self.label_4 = QLabel(self.page)
+        self.personnel_records_page = QWidget()
+        self.personnel_records_page.setObjectName(u"personnel_records_page")
+        self.label_4 = QLabel(self.personnel_records_page)
         self.label_4.setObjectName(u"label_4")
         self.label_4.setGeometry(QRect(0, 0, 921, 41))
         font1 = QFont()
         font1.setPointSize(18)
         self.label_4.setFont(font1)
         self.label_4.setStyleSheet(u"background-color: rgb(98, 160, 234);")
-        self.frame_3 = QFrame(self.page)
+        self.frame_3 = QFrame(self.personnel_records_page)
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setGeometry(QRect(0, 50, 911, 201))
         self.frame_3.setFrameShape(QFrame.StyledPanel)
@@ -303,7 +660,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_4.addWidget(self.frame_2)
 
-        self.label_27 = QLabel(self.page)
+        self.label_27 = QLabel(self.personnel_records_page)
         self.label_27.setObjectName(u"label_27")
         self.label_27.setGeometry(QRect(0, 270, 921, 41))
         self.label_27.setFont(font1)
@@ -311,9 +668,9 @@ class Ui_MainWindow(object):
 "\n"
 "color:white;")
         self.label_27.setAlignment(Qt.AlignCenter)
-        self.PersonnelRecords_table = QTableWidget(self.page)
-        if (self.PersonnelRecords_table.columnCount() < 5):
-            self.PersonnelRecords_table.setColumnCount(5)
+        self.PersonnelRecords_table = QTableWidget(self.personnel_records_page)
+        if (self.PersonnelRecords_table.columnCount() < 6):
+            self.PersonnelRecords_table.setColumnCount(6)
         __qtablewidgetitem = QTableWidgetItem()
         self.PersonnelRecords_table.setHorizontalHeaderItem(0, __qtablewidgetitem)
         __qtablewidgetitem1 = QTableWidgetItem()
@@ -324,15 +681,17 @@ class Ui_MainWindow(object):
         self.PersonnelRecords_table.setHorizontalHeaderItem(3, __qtablewidgetitem3)
         __qtablewidgetitem4 = QTableWidgetItem()
         self.PersonnelRecords_table.setHorizontalHeaderItem(4, __qtablewidgetitem4)
+        __qtablewidgetitem5 = QTableWidgetItem()
+        self.PersonnelRecords_table.setHorizontalHeaderItem(5, __qtablewidgetitem5)
         self.PersonnelRecords_table.setObjectName(u"PersonnelRecords_table")
         self.PersonnelRecords_table.setGeometry(QRect(0, 320, 911, 401))
         self.PersonnelRecords_table.setStyleSheet(u"color:black")
         self.PersonnelRecords_table.setShowGrid(False)
         self.PersonnelRecords_table.setGridStyle(Qt.SolidLine)
-        self.PersonnelRecords_table.horizontalHeader().setVisible(True)
+        self.PersonnelRecords_table.horizontalHeader().setVisible(False)
         self.PersonnelRecords_table.horizontalHeader().setCascadingSectionResizes(False)
         self.PersonnelRecords_table.horizontalHeader().setDefaultSectionSize(181)
-        self.stackedWidget.addWidget(self.page)
+        self.stackedWidget.addWidget(self.personnel_records_page)
         self.page_2 = QWidget()
         self.page_2.setObjectName(u"page_2")
         self.label_5 = QLabel(self.page_2)
@@ -391,16 +750,267 @@ class Ui_MainWindow(object):
         self.label_12.setGeometry(QRect(30, 60, 401, 51))
         self.label_12.setFont(font3)
         self.stackedWidget.addWidget(self.page_9)
-        self.page_10 = QWidget()
-        self.page_10.setObjectName(u"page_10")
-        self.label_13 = QLabel(self.page_10)
+        self.Inactive_personnel_page_01 = QWidget()
+        self.Inactive_personnel_page_01.setObjectName(u"Inactive_personnel_page_01")
+        self.stackedWidget_2 = QStackedWidget(self.Inactive_personnel_page_01)
+        self.stackedWidget_2.setObjectName(u"stackedWidget_2")
+        self.stackedWidget_2.setGeometry(QRect(0, 0, 911, 731))
+        self.Inactive_personnel_page = QWidget()
+        self.Inactive_personnel_page.setObjectName(u"Inactive_personnel_page")
+        self.label_33 = QLabel(self.Inactive_personnel_page)
+        self.label_33.setObjectName(u"label_33")
+        self.label_33.setGeometry(QRect(0, 0, 921, 41))
+        self.label_33.setFont(font1)
+        self.label_33.setStyleSheet(u"color:white;\n"
+"background-color: rgb(98, 160, 234);")
+        self.frame_5 = QFrame(self.Inactive_personnel_page)
+        self.frame_5.setObjectName(u"frame_5")
+        self.frame_5.setGeometry(QRect(0, 50, 911, 201))
+        self.frame_5.setFrameShape(QFrame.StyledPanel)
+        self.frame_5.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_10 = QVBoxLayout(self.frame_5)
+        self.verticalLayout_10.setObjectName(u"verticalLayout_10")
+        self.frame_8 = QFrame(self.frame_5)
+        self.frame_8.setObjectName(u"frame_8")
+        self.frame_8.setFrameShape(QFrame.StyledPanel)
+        self.frame_8.setFrameShadow(QFrame.Raised)
+        self.gridLayout_5 = QGridLayout(self.frame_8)
+        self.gridLayout_5.setObjectName(u"gridLayout_5")
+        self.lineEdit_19 = QLineEdit(self.frame_8)
+        self.lineEdit_19.setObjectName(u"lineEdit_19")
+
+        self.gridLayout_5.addWidget(self.lineEdit_19, 1, 1, 1, 1)
+
+        self.lineEdit_20 = QLineEdit(self.frame_8)
+        self.lineEdit_20.setObjectName(u"lineEdit_20")
+
+        self.gridLayout_5.addWidget(self.lineEdit_20, 1, 2, 1, 1)
+
+        self.label_34 = QLabel(self.frame_8)
+        self.label_34.setObjectName(u"label_34")
+        self.label_34.setFont(font2)
+        self.label_34.setStyleSheet(u"color:black")
+        self.label_34.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_5.addWidget(self.label_34, 0, 2, 1, 1)
+
+        self.lineEdit_21 = QLineEdit(self.frame_8)
+        self.lineEdit_21.setObjectName(u"lineEdit_21")
+
+        self.gridLayout_5.addWidget(self.lineEdit_21, 1, 0, 1, 1)
+
+        self.lineEdit_22 = QLineEdit(self.frame_8)
+        self.lineEdit_22.setObjectName(u"lineEdit_22")
+        self.lineEdit_22.setMaximumSize(QSize(100, 16777215))
+
+        self.gridLayout_5.addWidget(self.lineEdit_22, 1, 3, 1, 1)
+
+        self.label_35 = QLabel(self.frame_8)
+        self.label_35.setObjectName(u"label_35")
+        self.label_35.setFont(font2)
+        self.label_35.setStyleSheet(u"color:black")
+        self.label_35.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_5.addWidget(self.label_35, 0, 0, 1, 1)
+
+        self.label_36 = QLabel(self.frame_8)
+        self.label_36.setObjectName(u"label_36")
+        self.label_36.setFont(font2)
+        self.label_36.setStyleSheet(u"")
+        self.label_36.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_5.addWidget(self.label_36, 0, 3, 1, 1)
+
+        self.label_37 = QLabel(self.frame_8)
+        self.label_37.setObjectName(u"label_37")
+        self.label_37.setFont(font2)
+        self.label_37.setStyleSheet(u"color:black")
+        self.label_37.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_5.addWidget(self.label_37, 0, 1, 1, 1)
+
+
+        self.verticalLayout_10.addWidget(self.frame_8)
+
+        self.frame_9 = QFrame(self.frame_5)
+        self.frame_9.setObjectName(u"frame_9")
+        self.frame_9.setFrameShape(QFrame.StyledPanel)
+        self.frame_9.setFrameShadow(QFrame.Raised)
+        self.gridLayout_6 = QGridLayout(self.frame_9)
+        self.gridLayout_6.setObjectName(u"gridLayout_6")
+        self.lineEdit_23 = QLineEdit(self.frame_9)
+        self.lineEdit_23.setObjectName(u"lineEdit_23")
+        self.lineEdit_23.setMaximumSize(QSize(100, 16777215))
+
+        self.gridLayout_6.addWidget(self.lineEdit_23, 3, 1, 1, 1)
+
+        self.label_38 = QLabel(self.frame_9)
+        self.label_38.setObjectName(u"label_38")
+        self.label_38.setFont(font2)
+        self.label_38.setStyleSheet(u"color:black")
+        self.label_38.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_6.addWidget(self.label_38, 0, 0, 1, 1)
+
+        self.lineEdit_24 = QLineEdit(self.frame_9)
+        self.lineEdit_24.setObjectName(u"lineEdit_24")
+
+        self.gridLayout_6.addWidget(self.lineEdit_24, 3, 3, 1, 1)
+
+        self.lineEdit_25 = QLineEdit(self.frame_9)
+        self.lineEdit_25.setObjectName(u"lineEdit_25")
+
+        self.gridLayout_6.addWidget(self.lineEdit_25, 3, 4, 1, 1)
+
+        self.lineEdit_26 = QLineEdit(self.frame_9)
+        self.lineEdit_26.setObjectName(u"lineEdit_26")
+        self.lineEdit_26.setMaximumSize(QSize(150, 16777215))
+
+        self.gridLayout_6.addWidget(self.lineEdit_26, 3, 0, 1, 1)
+
+        self.lineEdit_27 = QLineEdit(self.frame_9)
+        self.lineEdit_27.setObjectName(u"lineEdit_27")
+
+        self.gridLayout_6.addWidget(self.lineEdit_27, 3, 2, 1, 1)
+
+        self.label_39 = QLabel(self.frame_9)
+        self.label_39.setObjectName(u"label_39")
+        self.label_39.setFont(font2)
+        self.label_39.setStyleSheet(u"color:black")
+        self.label_39.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_6.addWidget(self.label_39, 0, 4, 1, 1)
+
+        self.label_40 = QLabel(self.frame_9)
+        self.label_40.setObjectName(u"label_40")
+        self.label_40.setFont(font2)
+        self.label_40.setStyleSheet(u"color:black")
+        self.label_40.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_6.addWidget(self.label_40, 0, 3, 1, 1)
+
+        self.label_41 = QLabel(self.frame_9)
+        self.label_41.setObjectName(u"label_41")
+        self.label_41.setFont(font2)
+        self.label_41.setStyleSheet(u"color:black")
+        self.label_41.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_6.addWidget(self.label_41, 0, 1, 1, 1)
+
+        self.label_42 = QLabel(self.frame_9)
+        self.label_42.setObjectName(u"label_42")
+        self.label_42.setFont(font2)
+        self.label_42.setStyleSheet(u"color:black")
+        self.label_42.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_6.addWidget(self.label_42, 0, 2, 1, 1)
+
+
+        self.verticalLayout_10.addWidget(self.frame_9)
+
+        self.label_43 = QLabel(self.Inactive_personnel_page)
+        self.label_43.setObjectName(u"label_43")
+        self.label_43.setGeometry(QRect(0, 270, 921, 41))
+        self.label_43.setFont(font1)
+        self.label_43.setStyleSheet(u"background-color: rgb(98, 160, 234);\n"
+"\n"
+"color:white;")
+        self.label_43.setAlignment(Qt.AlignCenter)
+        self.PersonnelRecords_table_2 = QTableWidget(self.Inactive_personnel_page)
+        if (self.PersonnelRecords_table_2.columnCount() < 6):
+            self.PersonnelRecords_table_2.setColumnCount(6)
+        __qtablewidgetitem6 = QTableWidgetItem()
+        self.PersonnelRecords_table_2.setHorizontalHeaderItem(0, __qtablewidgetitem6)
+        __qtablewidgetitem7 = QTableWidgetItem()
+        self.PersonnelRecords_table_2.setHorizontalHeaderItem(1, __qtablewidgetitem7)
+        __qtablewidgetitem8 = QTableWidgetItem()
+        self.PersonnelRecords_table_2.setHorizontalHeaderItem(2, __qtablewidgetitem8)
+        __qtablewidgetitem9 = QTableWidgetItem()
+        self.PersonnelRecords_table_2.setHorizontalHeaderItem(3, __qtablewidgetitem9)
+        __qtablewidgetitem10 = QTableWidgetItem()
+        self.PersonnelRecords_table_2.setHorizontalHeaderItem(4, __qtablewidgetitem10)
+        __qtablewidgetitem11 = QTableWidgetItem()
+        self.PersonnelRecords_table_2.setHorizontalHeaderItem(5, __qtablewidgetitem11)
+        self.PersonnelRecords_table_2.setObjectName(u"PersonnelRecords_table_2")
+        self.PersonnelRecords_table_2.setGeometry(QRect(0, 320, 911, 401))
+        self.PersonnelRecords_table_2.setStyleSheet(u"color:black")
+        self.PersonnelRecords_table_2.setShowGrid(False)
+        self.PersonnelRecords_table_2.setGridStyle(Qt.SolidLine)
+        self.PersonnelRecords_table_2.horizontalHeader().setVisible(False)
+        self.PersonnelRecords_table_2.horizontalHeader().setCascadingSectionResizes(False)
+        self.PersonnelRecords_table_2.horizontalHeader().setDefaultSectionSize(181)
+        self.label_13 = QLabel(self.Inactive_personnel_page)
         self.label_13.setObjectName(u"label_13")
-        self.label_13.setGeometry(QRect(20, 60, 401, 51))
+        self.label_13.setGeometry(QRect(360, 0, 431, 41))
         self.label_13.setFont(font3)
-        self.stackedWidget.addWidget(self.page_10)
+        self.stackedWidget_2.addWidget(self.Inactive_personnel_page)
+        self.page_12 = QWidget()
+        self.page_12.setObjectName(u"page_12")
+        self.label_44 = QLabel(self.page_12)
+        self.label_44.setObjectName(u"label_44")
+        self.label_44.setGeometry(QRect(50, 50, 371, 51))
+        self.label_44.setFont(font3)
+        self.stackedWidget_2.addWidget(self.page_12)
+        self.page_13 = QWidget()
+        self.page_13.setObjectName(u"page_13")
+        self.label_45 = QLabel(self.page_13)
+        self.label_45.setObjectName(u"label_45")
+        self.label_45.setGeometry(QRect(30, 20, 401, 51))
+        self.label_45.setFont(font3)
+        self.stackedWidget_2.addWidget(self.page_13)
+        self.page_14 = QWidget()
+        self.page_14.setObjectName(u"page_14")
+        self.label_46 = QLabel(self.page_14)
+        self.label_46.setObjectName(u"label_46")
+        self.label_46.setGeometry(QRect(20, 50, 401, 51))
+        self.label_46.setFont(font3)
+        self.stackedWidget_2.addWidget(self.page_14)
+        self.page_15 = QWidget()
+        self.page_15.setObjectName(u"page_15")
+        self.label_47 = QLabel(self.page_15)
+        self.label_47.setObjectName(u"label_47")
+        self.label_47.setGeometry(QRect(20, 40, 401, 51))
+        self.label_47.setFont(font3)
+        self.stackedWidget_2.addWidget(self.page_15)
+        self.page_16 = QWidget()
+        self.page_16.setObjectName(u"page_16")
+        self.label_48 = QLabel(self.page_16)
+        self.label_48.setObjectName(u"label_48")
+        self.label_48.setGeometry(QRect(30, 50, 401, 51))
+        self.label_48.setFont(font3)
+        self.stackedWidget_2.addWidget(self.page_16)
+        self.page_17 = QWidget()
+        self.page_17.setObjectName(u"page_17")
+        self.label_49 = QLabel(self.page_17)
+        self.label_49.setObjectName(u"label_49")
+        self.label_49.setGeometry(QRect(30, 60, 401, 51))
+        self.label_49.setFont(font3)
+        self.stackedWidget_2.addWidget(self.page_17)
+        self.page_18 = QWidget()
+        self.page_18.setObjectName(u"page_18")
+        self.label_50 = QLabel(self.page_18)
+        self.label_50.setObjectName(u"label_50")
+        self.label_50.setGeometry(QRect(30, 50, 401, 51))
+        self.label_50.setFont(font3)
+        self.stackedWidget_2.addWidget(self.page_18)
+        self.page_19 = QWidget()
+        self.page_19.setObjectName(u"page_19")
+        self.label_51 = QLabel(self.page_19)
+        self.label_51.setObjectName(u"label_51")
+        self.label_51.setGeometry(QRect(30, 60, 401, 51))
+        self.label_51.setFont(font3)
+        self.stackedWidget_2.addWidget(self.page_19)
+        self.page_20 = QWidget()
+        self.page_20.setObjectName(u"page_20")
+        self.label_52 = QLabel(self.page_20)
+        self.label_52.setObjectName(u"label_52")
+        self.label_52.setGeometry(QRect(20, 60, 401, 51))
+        self.label_52.setFont(font3)
+        self.stackedWidget_2.addWidget(self.page_20)
+        self.stackedWidget.addWidget(self.Inactive_personnel_page_01)
         self.top_widget = QWidget(self.centralwidget)
         self.top_widget.setObjectName(u"top_widget")
-        self.top_widget.setGeometry(QRect(0, 0, 1331, 81))
+        self.top_widget.setGeometry(QRect(0, 0, 1351, 81))
         self.top_widget.setStyleSheet(u"QWidget{\n"
 "\n"
 "background-color: rgb(0, 62, 63);\n"
@@ -431,348 +1041,25 @@ class Ui_MainWindow(object):
         self.pushButton_11.setGeometry(QRect(1040, 20, 121, 41))
         self.pushButton_11.setIcon(icon)
         self.pushButton_11.setIconSize(QSize(40, 40))
-        self.placement_dropdown = QFrame(self.centralwidget)
-        self.placement_dropdown.setObjectName(u"placement_dropdown")
-        self.placement_dropdown.setGeometry(QRect(370, 80, 241, 151))
-        self.placement_dropdown.setStyleSheet(u"QWidget{\n"
-"\n"
-"background-color: rgb(24, 45	, 52);\n"
-"color:white\n"
-"\n"
-"}\n"
-"")
-        self.placement_dropdown.setFrameShape(QFrame.StyledPanel)
-        self.placement_dropdown.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_2 = QVBoxLayout(self.placement_dropdown)
-        self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.pushButton_25 = QPushButton(self.placement_dropdown)
-        self.pushButton_25.setObjectName(u"pushButton_25")
-        self.pushButton_25.setCheckable(False)
-
-        self.verticalLayout_2.addWidget(self.pushButton_25)
-
-        self.pushButton_27 = QPushButton(self.placement_dropdown)
-        self.pushButton_27.setObjectName(u"pushButton_27")
-        self.pushButton_27.setCheckable(False)
-
-        self.verticalLayout_2.addWidget(self.pushButton_27)
-
-        self.pushButton_26 = QPushButton(self.placement_dropdown)
-        self.pushButton_26.setObjectName(u"pushButton_26")
-        self.pushButton_26.setCheckable(False)
-
-        self.verticalLayout_2.addWidget(self.pushButton_26)
-
-        self.pushButton_28 = QPushButton(self.placement_dropdown)
-        self.pushButton_28.setObjectName(u"pushButton_28")
-        self.pushButton_28.setCheckable(False)
-
-        self.verticalLayout_2.addWidget(self.pushButton_28)
-
-        self.reenlistmen_dropdown = QFrame(self.centralwidget)
-        self.reenlistmen_dropdown.setObjectName(u"reenlistmen_dropdown")
-        self.reenlistmen_dropdown.setGeometry(QRect(370, 120, 321, 141))
-        self.reenlistmen_dropdown.setStyleSheet(u"QWidget{\n"
-"\n"
-"background-color: rgb(24, 45	, 52);\n"
-"color:white\n"
-"\n"
-"}\n"
-"")
-        self.reenlistmen_dropdown.setFrameShape(QFrame.StyledPanel)
-        self.reenlistmen_dropdown.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_3 = QVBoxLayout(self.reenlistmen_dropdown)
-        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.pushButton_30 = QPushButton(self.reenlistmen_dropdown)
-        self.pushButton_30.setObjectName(u"pushButton_30")
-        self.pushButton_30.setCheckable(False)
-
-        self.verticalLayout_3.addWidget(self.pushButton_30)
-
-        self.pushButton_31 = QPushButton(self.reenlistmen_dropdown)
-        self.pushButton_31.setObjectName(u"pushButton_31")
-        self.pushButton_31.setCheckable(False)
-
-        self.verticalLayout_3.addWidget(self.pushButton_31)
-
-        self.pushButton_32 = QPushButton(self.reenlistmen_dropdown)
-        self.pushButton_32.setObjectName(u"pushButton_32")
-        self.pushButton_32.setCheckable(False)
-
-        self.verticalLayout_3.addWidget(self.pushButton_32)
-
-        self.pushButton_33 = QPushButton(self.reenlistmen_dropdown)
-        self.pushButton_33.setObjectName(u"pushButton_33")
-        self.pushButton_33.setCheckable(False)
-
-        self.verticalLayout_3.addWidget(self.pushButton_33)
-
-        self.schooling_dropdown = QFrame(self.centralwidget)
-        self.schooling_dropdown.setObjectName(u"schooling_dropdown")
-        self.schooling_dropdown.setGeometry(QRect(370, 170, 281, 101))
-        self.schooling_dropdown.setStyleSheet(u"QWidget{\n"
-"\n"
-"background-color: rgb(24, 45	, 52);\n"
-"color:white\n"
-"\n"
-"}\n"
-"")
-        self.schooling_dropdown.setFrameShape(QFrame.StyledPanel)
-        self.schooling_dropdown.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_5 = QVBoxLayout(self.schooling_dropdown)
-        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
-        self.pushButton_36 = QPushButton(self.schooling_dropdown)
-        self.pushButton_36.setObjectName(u"pushButton_36")
-        self.pushButton_36.setCheckable(True)
-
-        self.verticalLayout_5.addWidget(self.pushButton_36)
-
-        self.pushButton_37 = QPushButton(self.schooling_dropdown)
-        self.pushButton_37.setObjectName(u"pushButton_37")
-        self.pushButton_37.setCheckable(True)
-
-        self.verticalLayout_5.addWidget(self.pushButton_37)
-
-        self.elinstschooling_dropdown = QFrame(self.centralwidget)
-        self.elinstschooling_dropdown.setObjectName(u"elinstschooling_dropdown")
-        self.elinstschooling_dropdown.setGeometry(QRect(640, 150, 281, 151))
-        self.elinstschooling_dropdown.setStyleSheet(u"QWidget{\n"
-"\n"
-"background-color: rgb(24, 45	, 52);\n"
-"color:white\n"
-"\n"
-"}\n"
-"")
-        self.elinstschooling_dropdown.setFrameShape(QFrame.StyledPanel)
-        self.elinstschooling_dropdown.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_19 = QVBoxLayout(self.elinstschooling_dropdown)
-        self.verticalLayout_19.setObjectName(u"verticalLayout_19")
-        self.pushButton_52 = QPushButton(self.elinstschooling_dropdown)
-        self.pushButton_52.setObjectName(u"pushButton_52")
-        self.pushButton_52.setCheckable(False)
-
-        self.verticalLayout_19.addWidget(self.pushButton_52)
-
-        self.pushButton_53 = QPushButton(self.elinstschooling_dropdown)
-        self.pushButton_53.setObjectName(u"pushButton_53")
-        self.pushButton_53.setCheckable(False)
-
-        self.verticalLayout_19.addWidget(self.pushButton_53)
-
-        self.pushButton_51 = QPushButton(self.elinstschooling_dropdown)
-        self.pushButton_51.setObjectName(u"pushButton_51")
-        self.pushButton_51.setCheckable(False)
-
-        self.verticalLayout_19.addWidget(self.pushButton_51)
-
-        self.pushButton_54 = QPushButton(self.elinstschooling_dropdown)
-        self.pushButton_54.setObjectName(u"pushButton_54")
-        self.pushButton_54.setCheckable(False)
-
-        self.verticalLayout_19.addWidget(self.pushButton_54)
-
-        self.officerschooling_dropdown = QFrame(self.centralwidget)
-        self.officerschooling_dropdown.setObjectName(u"officerschooling_dropdown")
-        self.officerschooling_dropdown.setGeometry(QRect(640, 150, 281, 151))
-        self.officerschooling_dropdown.setStyleSheet(u"QWidget{\n"
-"\n"
-"background-color: rgb(24, 45	, 52);\n"
-"color:white\n"
-"\n"
-"}\n"
-"")
-        self.officerschooling_dropdown.setFrameShape(QFrame.StyledPanel)
-        self.officerschooling_dropdown.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_17 = QVBoxLayout(self.officerschooling_dropdown)
-        self.verticalLayout_17.setObjectName(u"verticalLayout_17")
-        self.pushButton_48 = QPushButton(self.officerschooling_dropdown)
-        self.pushButton_48.setObjectName(u"pushButton_48")
-        self.pushButton_48.setCheckable(False)
-
-        self.verticalLayout_17.addWidget(self.pushButton_48)
-
-        self.pushButton_49 = QPushButton(self.officerschooling_dropdown)
-        self.pushButton_49.setObjectName(u"pushButton_49")
-        self.pushButton_49.setCheckable(False)
-
-        self.verticalLayout_17.addWidget(self.pushButton_49)
-
-        self.pushButton_50 = QPushButton(self.officerschooling_dropdown)
-        self.pushButton_50.setObjectName(u"pushButton_50")
-        self.pushButton_50.setCheckable(False)
-
-        self.verticalLayout_17.addWidget(self.pushButton_50)
-
-        self.afsc_monitoring_dropdown = QFrame(self.centralwidget)
-        self.afsc_monitoring_dropdown.setObjectName(u"afsc_monitoring_dropdown")
-        self.afsc_monitoring_dropdown.setGeometry(QRect(370, 290, 281, 101))
-        self.afsc_monitoring_dropdown.setStyleSheet(u"QWidget{\n"
-"\n"
-"background-color: rgb(24, 45	, 52);\n"
-"color:white\n"
-"\n"
-"}\n"
-"")
-        self.afsc_monitoring_dropdown.setFrameShape(QFrame.StyledPanel)
-        self.afsc_monitoring_dropdown.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_11 = QVBoxLayout(self.afsc_monitoring_dropdown)
-        self.verticalLayout_11.setObjectName(u"verticalLayout_11")
-        self.pushButton_42 = QPushButton(self.afsc_monitoring_dropdown)
-        self.pushButton_42.setObjectName(u"pushButton_42")
-        self.pushButton_42.setCheckable(False)
-
-        self.verticalLayout_11.addWidget(self.pushButton_42)
-
-        self.pushButton_43 = QPushButton(self.afsc_monitoring_dropdown)
-        self.pushButton_43.setObjectName(u"pushButton_43")
-        self.pushButton_43.setCheckable(False)
-
-        self.verticalLayout_11.addWidget(self.pushButton_43)
-
-        self.promotion_dropdown = QFrame(self.centralwidget)
-        self.promotion_dropdown.setObjectName(u"promotion_dropdown")
-        self.promotion_dropdown.setGeometry(QRect(370, 210, 281, 101))
-        self.promotion_dropdown.setStyleSheet(u"QWidget{\n"
-"\n"
-"background-color: rgb(24, 45	, 52);\n"
-"color:white\n"
-"\n"
-"}\n"
-"")
-        self.promotion_dropdown.setFrameShape(QFrame.StyledPanel)
-        self.promotion_dropdown.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_9 = QVBoxLayout(self.promotion_dropdown)
-        self.verticalLayout_9.setObjectName(u"verticalLayout_9")
-        self.pushButton_40 = QPushButton(self.promotion_dropdown)
-        self.pushButton_40.setObjectName(u"pushButton_40")
-        self.pushButton_40.setCheckable(False)
-
-        self.verticalLayout_9.addWidget(self.pushButton_40)
-
-        self.pushButton_41 = QPushButton(self.promotion_dropdown)
-        self.pushButton_41.setObjectName(u"pushButton_41")
-        self.pushButton_41.setCheckable(False)
-
-        self.verticalLayout_9.addWidget(self.pushButton_41)
-
-        self.etad_SOT_dropdown = QFrame(self.centralwidget)
-        self.etad_SOT_dropdown.setObjectName(u"etad_SOT_dropdown")
-        self.etad_SOT_dropdown.setGeometry(QRect(370, 250, 281, 191))
-        self.etad_SOT_dropdown.setStyleSheet(u"QWidget{\n"
-"\n"
-"background-color: rgb(24, 45	, 52);\n"
-"color:white\n"
-"\n"
-"}\n"
-"")
-        self.etad_SOT_dropdown.setFrameShape(QFrame.StyledPanel)
-        self.etad_SOT_dropdown.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_13 = QVBoxLayout(self.etad_SOT_dropdown)
-        self.verticalLayout_13.setObjectName(u"verticalLayout_13")
-        self.pushButton_34 = QPushButton(self.etad_SOT_dropdown)
-        self.pushButton_34.setObjectName(u"pushButton_34")
-        self.pushButton_34.setCheckable(False)
-
-        self.verticalLayout_13.addWidget(self.pushButton_34)
-
-        self.pushButton_35 = QPushButton(self.etad_SOT_dropdown)
-        self.pushButton_35.setObjectName(u"pushButton_35")
-        self.pushButton_35.setCheckable(False)
-
-        self.verticalLayout_13.addWidget(self.pushButton_35)
-
-        self.pushButton_44 = QPushButton(self.etad_SOT_dropdown)
-        self.pushButton_44.setObjectName(u"pushButton_44")
-        self.pushButton_44.setCheckable(False)
-
-        self.verticalLayout_13.addWidget(self.pushButton_44)
-
-        self.pushButton_45 = QPushButton(self.etad_SOT_dropdown)
-        self.pushButton_45.setObjectName(u"pushButton_45")
-        self.pushButton_45.setCheckable(False)
-
-        self.verticalLayout_13.addWidget(self.pushButton_45)
-
-        self.seniority_dropdown = QFrame(self.centralwidget)
-        self.seniority_dropdown.setObjectName(u"seniority_dropdown")
-        self.seniority_dropdown.setGeometry(QRect(370, 250, 281, 111))
-        self.seniority_dropdown.setStyleSheet(u"QWidget{\n"
-"\n"
-"background-color: rgb(24, 45	, 52);\n"
-"color:white\n"
-"\n"
-"}\n"
-"")
-        self.seniority_dropdown.setFrameShape(QFrame.StyledPanel)
-        self.seniority_dropdown.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_15 = QVBoxLayout(self.seniority_dropdown)
-        self.verticalLayout_15.setObjectName(u"verticalLayout_15")
-        self.pushButton_46 = QPushButton(self.seniority_dropdown)
-        self.pushButton_46.setObjectName(u"pushButton_46")
-        self.pushButton_46.setCheckable(False)
-
-        self.verticalLayout_15.addWidget(self.pushButton_46)
-
-        self.pushButton_47 = QPushButton(self.seniority_dropdown)
-        self.pushButton_47.setObjectName(u"pushButton_47")
-        self.pushButton_47.setCheckable(False)
-
-        self.verticalLayout_15.addWidget(self.pushButton_47)
-
-        self.attrition_dropdown = QFrame(self.centralwidget)
-        self.attrition_dropdown.setObjectName(u"attrition_dropdown")
-        self.attrition_dropdown.setGeometry(QRect(370, 370, 281, 111))
-        self.attrition_dropdown.setStyleSheet(u"QWidget{\n"
-"\n"
-"background-color: rgb(24, 45	, 52);\n"
-"color:white\n"
-"\n"
-"}\n"
-"")
-        self.attrition_dropdown.setFrameShape(QFrame.StyledPanel)
-        self.attrition_dropdown.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_16 = QVBoxLayout(self.attrition_dropdown)
-        self.verticalLayout_16.setObjectName(u"verticalLayout_16")
-        self.pushButton_55 = QPushButton(self.attrition_dropdown)
-        self.pushButton_55.setObjectName(u"pushButton_55")
-        self.pushButton_55.setCheckable(False)
-
-        self.verticalLayout_16.addWidget(self.pushButton_55)
-
-        self.pushButton_56 = QPushButton(self.attrition_dropdown)
-        self.pushButton_56.setObjectName(u"pushButton_56")
-        self.pushButton_56.setCheckable(False)
-
-        self.verticalLayout_16.addWidget(self.pushButton_56)
-
         MainWindow.setCentralWidget(self.centralwidget)
         self.main_widget.raise_()
         self.icon_text_widget.raise_()
         self.top_widget.raise_()
-        self.placement_dropdown.raise_()
-        self.reenlistmen_dropdown.raise_()
-        self.schooling_dropdown.raise_()
-        self.elinstschooling_dropdown.raise_()
-        self.officerschooling_dropdown.raise_()
-        self.afsc_monitoring_dropdown.raise_()
-        self.promotion_dropdown.raise_()
-        self.etad_SOT_dropdown.raise_()
-        self.seniority_dropdown.raise_()
-        self.attrition_dropdown.raise_()
 
         self.retranslateUi(MainWindow)
         self.placement_btn.toggled.connect(self.placement_dropdown.setVisible)
         self.reenlistment_btn.toggled.connect(self.reenlistmen_dropdown.setVisible)
-        self.pushButton_37.toggled.connect(self.elinstschooling_dropdown.setVisible)
-        self.pushButton_36.toggled.connect(self.officerschooling_dropdown.setVisible)
-        self.schooling_btn.toggled.connect(self.schooling_dropdown.setVisible)
-        self.afscmonitoring_btn.toggled.connect(self.afsc_monitoring_dropdown.setVisible)
+        self.schooling_btn.toggled.connect(self.seniority_dropdown.setVisible)
         self.promotion_btn.toggled.connect(self.promotion_dropdown.setVisible)
-        self.seniority_liner_btn.toggled.connect(self.seniority_dropdown.setVisible)
+        self.pushButton_46.toggled.connect(self.officerschooling_dropdown.setVisible)
+        self.pushButton_47.toggled.connect(self.elinstschooling_dropdown.setVisible)
+        self.seniority_liner_btn.toggled.connect(self.schooling_dropdown.setVisible)
+        self.afscmonitoring_btn.toggled.connect(self.afsc_monitoring_dropdown.setVisible)
         self.etad_sot_btn.toggled.connect(self.etad_SOT_dropdown.setVisible)
         self.attrition_btn.toggled.connect(self.attrition_dropdown.setVisible)
 
         self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget_2.setCurrentIndex(0)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -782,13 +1069,42 @@ class Ui_MainWindow(object):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.personnel_recordsbtn.setText(QCoreApplication.translate("MainWindow", u"PERSONNEL RECORDS", None))
         self.placement_btn.setText(QCoreApplication.translate("MainWindow", u"PLACEMENT", None))
+        self.pushButton_25.setText(QCoreApplication.translate("MainWindow", u"OFFICER", None))
+        self.pushButton_27.setText(QCoreApplication.translate("MainWindow", u"DS MONITORING", None))
+        self.pushButton_26.setText(QCoreApplication.translate("MainWindow", u"ENLISTED PERSONNEL", None))
+        self.pushButton_28.setText(QCoreApplication.translate("MainWindow", u"PERSONNEL MONITORING", None))
         self.reenlistment_btn.setText(QCoreApplication.translate("MainWindow", u"REENLISTMENT", None))
+        self.pushButton_30.setText(QCoreApplication.translate("MainWindow", u"1ST TRANCHE", None))
+        self.pushButton_31.setText(QCoreApplication.translate("MainWindow", u"2ND TRANCHE/RE-ENLISTMENT", None))
+        self.pushButton_32.setText(QCoreApplication.translate("MainWindow", u"FOR MEDICAL", None))
+        self.pushButton_33.setText(QCoreApplication.translate("MainWindow", u"EXPIRED ETE", None))
         self.schooling_btn.setText(QCoreApplication.translate("MainWindow", u"SCHOOLING", None))
+        self.pushButton_46.setText(QCoreApplication.translate("MainWindow", u"OFFICER", None))
+        self.pushButton_48.setText(QCoreApplication.translate("MainWindow", u"CGSC", None))
+        self.pushButton_49.setText(QCoreApplication.translate("MainWindow", u"SOC", None))
+        self.pushButton_50.setText(QCoreApplication.translate("MainWindow", u"BAFOC", None))
+        self.pushButton_47.setText(QCoreApplication.translate("MainWindow", u"ENLISTED PERSONNEL", None))
+        self.pushButton_52.setText(QCoreApplication.translate("MainWindow", u"ANCOC", None))
+        self.pushButton_53.setText(QCoreApplication.translate("MainWindow", u"BNCOC", None))
+        self.pushButton_51.setText(QCoreApplication.translate("MainWindow", u"SMC", None))
+        self.pushButton_54.setText(QCoreApplication.translate("MainWindow", u"BMT", None))
         self.promotion_btn.setText(QCoreApplication.translate("MainWindow", u"PROMOTION", None))
+        self.pushButton_40.setText(QCoreApplication.translate("MainWindow", u"OFFICER", None))
+        self.pushButton_41.setText(QCoreApplication.translate("MainWindow", u"ENLISTED PERSONNEL", None))
         self.seniority_liner_btn.setText(QCoreApplication.translate("MainWindow", u"SENIORITY LINEAR LIST", None))
+        self.pushButton_36.setText(QCoreApplication.translate("MainWindow", u"OFFICER", None))
+        self.pushButton_37.setText(QCoreApplication.translate("MainWindow", u"ENLISTED PERSONNEL", None))
         self.afscmonitoring_btn.setText(QCoreApplication.translate("MainWindow", u"AFSC MONITORING", None))
+        self.pushButton_42.setText(QCoreApplication.translate("MainWindow", u"PRIORITY COURSES", None))
+        self.pushButton_43.setText(QCoreApplication.translate("MainWindow", u"BY UNIT", None))
         self.etad_sot_btn.setText(QCoreApplication.translate("MainWindow", u"ETAD / SOT", None))
+        self.pushButton_34.setText(QCoreApplication.translate("MainWindow", u"SOT", None))
+        self.pushButton_35.setText(QCoreApplication.translate("MainWindow", u"2ND ETAD", None))
+        self.pushButton_44.setText(QCoreApplication.translate("MainWindow", u"1ST ETAD", None))
+        self.pushButton_45.setText(QCoreApplication.translate("MainWindow", u"PROVISIONAL", None))
         self.attrition_btn.setText(QCoreApplication.translate("MainWindow", u"ATTRITION", None))
+        self.pushButton_55.setText(QCoreApplication.translate("MainWindow", u"OFFICER", None))
+        self.pushButton_56.setText(QCoreApplication.translate("MainWindow", u"ENLISTED PERSONNEL", None))
         self.inactivepersonnel_btn.setText(QCoreApplication.translate("MainWindow", u"INACTIVE PERSONNEL", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"ACTIVE PERSONNEL RECORDS", None))
         self.label_16.setText(QCoreApplication.translate("MainWindow", u"Middle Name", None))
@@ -810,7 +1126,9 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem3 = self.PersonnelRecords_table.horizontalHeaderItem(3)
         ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"FULL NAME", None));
         ___qtablewidgetitem4 = self.PersonnelRecords_table.horizontalHeaderItem(4)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"ACTION", None));
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"UNIT", None));
+        ___qtablewidgetitem5 = self.PersonnelRecords_table.horizontalHeaderItem(5)
+        ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"ACTION", None));
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"PLACEMENT", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"REENLISTMENT", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"SCHOOLING", None))
@@ -819,38 +1137,41 @@ class Ui_MainWindow(object):
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"AFSC MONITORING", None))
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"ETAD / SOT", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"ATTRITION", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"ACTIVE PERSONNEL RECORDS", None))
+        self.label_34.setText(QCoreApplication.translate("MainWindow", u"Middle Name", None))
+        self.label_35.setText(QCoreApplication.translate("MainWindow", u"Last Name", None))
+        self.label_36.setText(QCoreApplication.translate("MainWindow", u"Sufffix", None))
+        self.label_37.setText(QCoreApplication.translate("MainWindow", u"First Name", None))
+        self.label_38.setText(QCoreApplication.translate("MainWindow", u"AFPSN", None))
+        self.label_39.setText(QCoreApplication.translate("MainWindow", u"Sex", None))
+        self.label_40.setText(QCoreApplication.translate("MainWindow", u"Source of Enlistment", None))
+        self.label_41.setText(QCoreApplication.translate("MainWindow", u"Rank", None))
+        self.label_42.setText(QCoreApplication.translate("MainWindow", u"Classification", None))
+        self.label_43.setText(QCoreApplication.translate("MainWindow", u"SEARCH", None))
+        ___qtablewidgetitem6 = self.PersonnelRecords_table_2.horizontalHeaderItem(0)
+        ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"NR", None));
+        ___qtablewidgetitem7 = self.PersonnelRecords_table_2.horizontalHeaderItem(1)
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"AFPSN", None));
+        ___qtablewidgetitem8 = self.PersonnelRecords_table_2.horizontalHeaderItem(2)
+        ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"RANK", None));
+        ___qtablewidgetitem9 = self.PersonnelRecords_table_2.horizontalHeaderItem(3)
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"FULL NAME", None));
+        ___qtablewidgetitem10 = self.PersonnelRecords_table_2.horizontalHeaderItem(4)
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"UNIT", None));
+        ___qtablewidgetitem11 = self.PersonnelRecords_table_2.horizontalHeaderItem(5)
+        ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"ACTION", None));
         self.label_13.setText(QCoreApplication.translate("MainWindow", u"INACTIVE PERSONNEL", None))
+        self.label_44.setText(QCoreApplication.translate("MainWindow", u"PLACEMENT", None))
+        self.label_45.setText(QCoreApplication.translate("MainWindow", u"REENLISTMENT", None))
+        self.label_46.setText(QCoreApplication.translate("MainWindow", u"SCHOOLING", None))
+        self.label_47.setText(QCoreApplication.translate("MainWindow", u"PROMOTION", None))
+        self.label_48.setText(QCoreApplication.translate("MainWindow", u"SENIORITY LINEAR LIST", None))
+        self.label_49.setText(QCoreApplication.translate("MainWindow", u"AFSC MONITORING", None))
+        self.label_50.setText(QCoreApplication.translate("MainWindow", u"ETAD / SOT", None))
+        self.label_51.setText(QCoreApplication.translate("MainWindow", u"ATTRITION", None))
+        self.label_52.setText(QCoreApplication.translate("MainWindow", u"INACTIVE PERSONNEL", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"PAF HUMAN RESOURCES MANAGEMENT SYSTEM", None))
         self.pushButton_24.setText(QCoreApplication.translate("MainWindow", u"LOGOUT", None))
         self.pushButton_11.setText(QCoreApplication.translate("MainWindow", u"ACCOUNT", None))
-        self.pushButton_25.setText(QCoreApplication.translate("MainWindow", u"OFFICER", None))
-        self.pushButton_27.setText(QCoreApplication.translate("MainWindow", u"DS MONITORING", None))
-        self.pushButton_26.setText(QCoreApplication.translate("MainWindow", u"ENLISTED PERSONNEL", None))
-        self.pushButton_28.setText(QCoreApplication.translate("MainWindow", u"PERSONNEL MONITORING", None))
-        self.pushButton_30.setText(QCoreApplication.translate("MainWindow", u"1ST TRANCHE", None))
-        self.pushButton_31.setText(QCoreApplication.translate("MainWindow", u"2ND TRANCHE/RE-ENLISTMENT", None))
-        self.pushButton_32.setText(QCoreApplication.translate("MainWindow", u"FOR MEDICAL", None))
-        self.pushButton_33.setText(QCoreApplication.translate("MainWindow", u"EXPIRED ETE", None))
-        self.pushButton_36.setText(QCoreApplication.translate("MainWindow", u"OFFICER", None))
-        self.pushButton_37.setText(QCoreApplication.translate("MainWindow", u"ENLISTED PERSONNEL", None))
-        self.pushButton_52.setText(QCoreApplication.translate("MainWindow", u"ANCOC", None))
-        self.pushButton_53.setText(QCoreApplication.translate("MainWindow", u"BNCOC", None))
-        self.pushButton_51.setText(QCoreApplication.translate("MainWindow", u"SMC", None))
-        self.pushButton_54.setText(QCoreApplication.translate("MainWindow", u"BMT", None))
-        self.pushButton_48.setText(QCoreApplication.translate("MainWindow", u"CGSC", None))
-        self.pushButton_49.setText(QCoreApplication.translate("MainWindow", u"SOC", None))
-        self.pushButton_50.setText(QCoreApplication.translate("MainWindow", u"BAFOC", None))
-        self.pushButton_42.setText(QCoreApplication.translate("MainWindow", u"PRIORITY COURSES", None))
-        self.pushButton_43.setText(QCoreApplication.translate("MainWindow", u"BY UNIT", None))
-        self.pushButton_40.setText(QCoreApplication.translate("MainWindow", u"OFFICER", None))
-        self.pushButton_41.setText(QCoreApplication.translate("MainWindow", u"ENLISTED PERSONNEL", None))
-        self.pushButton_34.setText(QCoreApplication.translate("MainWindow", u"SOT", None))
-        self.pushButton_35.setText(QCoreApplication.translate("MainWindow", u"2ND ETAD", None))
-        self.pushButton_44.setText(QCoreApplication.translate("MainWindow", u"1ST ETAD", None))
-        self.pushButton_45.setText(QCoreApplication.translate("MainWindow", u"PROVISIONAL", None))
-        self.pushButton_46.setText(QCoreApplication.translate("MainWindow", u"OFFICER", None))
-        self.pushButton_47.setText(QCoreApplication.translate("MainWindow", u"ENLISTED PERSONNEL", None))
-        self.pushButton_55.setText(QCoreApplication.translate("MainWindow", u"OFFICER", None))
-        self.pushButton_56.setText(QCoreApplication.translate("MainWindow", u"ENLISTED PERSONNEL", None))
     # retranslateUi
 
