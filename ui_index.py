@@ -16,10 +16,10 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QGridLayout,
-    QHeaderView, QLabel, QLineEdit, QMainWindow,
-    QPushButton, QScrollArea, QSizePolicy, QSpacerItem,
-    QStackedWidget, QTableWidget, QTableWidgetItem, QTextEdit,
-    QVBoxLayout, QWidget)
+    QHBoxLayout, QHeaderView, QLabel, QLineEdit,
+    QMainWindow, QPushButton, QScrollArea, QSizePolicy,
+    QSpacerItem, QStackedWidget, QTableWidget, QTableWidgetItem,
+    QTextEdit, QVBoxLayout, QWidget)
 import resources_rc
 
 class Ui_MainWindow(object):
@@ -29,9 +29,87 @@ class Ui_MainWindow(object):
         MainWindow.resize(1518, 869)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.icon_text_widget = QWidget(self.centralwidget)
+        self.verticalLayout_20 = QVBoxLayout(self.centralwidget)
+        self.verticalLayout_20.setObjectName(u"verticalLayout_20")
+        self.frame_20 = QFrame(self.centralwidget)
+        self.frame_20.setObjectName(u"frame_20")
+        self.frame_20.setFrameShape(QFrame.StyledPanel)
+        self.frame_20.setFrameShadow(QFrame.Raised)
+        self.gridLayout_13 = QGridLayout(self.frame_20)
+        self.gridLayout_13.setSpacing(0)
+        self.gridLayout_13.setObjectName(u"gridLayout_13")
+        self.gridLayout_13.setContentsMargins(0, 0, 0, 0)
+        self.frame_21 = QFrame(self.frame_20)
+        self.frame_21.setObjectName(u"frame_21")
+        self.frame_21.setFrameShape(QFrame.StyledPanel)
+        self.frame_21.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_22 = QVBoxLayout(self.frame_21)
+        self.verticalLayout_22.setSpacing(0)
+        self.verticalLayout_22.setObjectName(u"verticalLayout_22")
+        self.verticalLayout_22.setContentsMargins(0, 0, 0, 0)
+        self.top_widget = QWidget(self.frame_21)
+        self.top_widget.setObjectName(u"top_widget")
+        self.top_widget.setStyleSheet(u"QWidget{\n"
+"\n"
+"\n"
+"background-color: #1a659e;\n"
+"color:white;\n"
+"}")
+        self.horizontalLayout_2 = QHBoxLayout(self.top_widget)
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.label = QLabel(self.top_widget)
+        self.label.setObjectName(u"label")
+        self.label.setMaximumSize(QSize(60, 60))
+        self.label.setPixmap(QPixmap(u":/newPrefix/icon/Logo.png"))
+        self.label.setScaledContents(True)
+
+        self.horizontalLayout_2.addWidget(self.label)
+
+        self.label_2 = QLabel(self.top_widget)
+        self.label_2.setObjectName(u"label_2")
+        self.label_2.setStyleSheet(u"QLabel{\n"
+"	font-size:20px;\n"
+"\n"
+"}")
+
+        self.horizontalLayout_2.addWidget(self.label_2)
+
+        self.horizontalSpacer = QSpacerItem(707, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_2.addItem(self.horizontalSpacer)
+
+        self.pushButton_11 = QPushButton(self.top_widget)
+        self.pushButton_11.setObjectName(u"pushButton_11")
+        icon = QIcon()
+        icon.addFile(u":/ /icon/PersonalRecords.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.pushButton_11.setIcon(icon)
+        self.pushButton_11.setIconSize(QSize(40, 40))
+
+        self.horizontalLayout_2.addWidget(self.pushButton_11)
+
+        self.pushButton_24 = QPushButton(self.top_widget)
+        self.pushButton_24.setObjectName(u"pushButton_24")
+        self.pushButton_24.setIcon(icon)
+        self.pushButton_24.setIconSize(QSize(40, 40))
+
+        self.horizontalLayout_2.addWidget(self.pushButton_24)
+
+
+        self.verticalLayout_22.addWidget(self.top_widget)
+
+
+        self.gridLayout_13.addWidget(self.frame_21, 0, 0, 1, 2)
+
+        self.frame_22 = QFrame(self.frame_20)
+        self.frame_22.setObjectName(u"frame_22")
+        self.frame_22.setFrameShape(QFrame.StyledPanel)
+        self.frame_22.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout = QHBoxLayout(self.frame_22)
+        self.horizontalLayout.setSpacing(0)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.icon_text_widget = QWidget(self.frame_22)
         self.icon_text_widget.setObjectName(u"icon_text_widget")
-        self.icon_text_widget.setGeometry(QRect(0, 80, 371, 731))
         self.icon_text_widget.setStyleSheet(u"QWidget{\n"
 "\n"
 "background-color: #1a659e;\n"
@@ -47,7 +125,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 337, 1521))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 298, 1521))
         self.verticalLayout = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.frame_4 = QFrame(self.scrollAreaWidgetContents)
@@ -543,29 +621,46 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_7.addItem(self.verticalSpacer)
 
-        self.main_widget = QWidget(self.centralwidget)
+
+        self.horizontalLayout.addWidget(self.icon_text_widget)
+
+
+        self.gridLayout_13.addWidget(self.frame_22, 1, 0, 1, 1)
+
+        self.frame_23 = QFrame(self.frame_20)
+        self.frame_23.setObjectName(u"frame_23")
+        self.frame_23.setFrameShape(QFrame.StyledPanel)
+        self.frame_23.setFrameShadow(QFrame.Raised)
+        self.verticalLayout_21 = QVBoxLayout(self.frame_23)
+        self.verticalLayout_21.setSpacing(0)
+        self.verticalLayout_21.setObjectName(u"verticalLayout_21")
+        self.verticalLayout_21.setContentsMargins(0, 0, 0, 0)
+        self.main_widget = QWidget(self.frame_23)
         self.main_widget.setObjectName(u"main_widget")
-        self.main_widget.setGeometry(QRect(370, 80, 981, 971))
         self.main_widget.setStyleSheet(u"background-color:#f8f9fa;\n"
 "\n"
 "color:Black")
+        self.verticalLayout_24 = QVBoxLayout(self.main_widget)
+        self.verticalLayout_24.setObjectName(u"verticalLayout_24")
         self.stackedWidget = QStackedWidget(self.main_widget)
         self.stackedWidget.setObjectName(u"stackedWidget")
-        self.stackedWidget.setGeometry(QRect(10, 10, 941, 731))
         self.personnel_records_page = QWidget()
         self.personnel_records_page.setObjectName(u"personnel_records_page")
+        self.verticalLayout_26 = QVBoxLayout(self.personnel_records_page)
+        self.verticalLayout_26.setObjectName(u"verticalLayout_26")
         self.label_4 = QLabel(self.personnel_records_page)
         self.label_4.setObjectName(u"label_4")
-        self.label_4.setGeometry(QRect(0, 0, 921, 41))
         font1 = QFont()
         font1.setPointSize(18)
         self.label_4.setFont(font1)
         self.label_4.setStyleSheet(u"background-color: rgb(98, 160, 234);\n"
 "color:white;")
         self.label_4.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_26.addWidget(self.label_4)
+
         self.frame_3 = QFrame(self.personnel_records_page)
         self.frame_3.setObjectName(u"frame_3")
-        self.frame_3.setGeometry(QRect(0, 50, 911, 201))
         self.frame_3.setFrameShape(QFrame.StyledPanel)
         self.frame_3.setFrameShadow(QFrame.Raised)
         self.verticalLayout_4 = QVBoxLayout(self.frame_3)
@@ -710,13 +805,18 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_4.addWidget(self.frame_2)
 
+
+        self.verticalLayout_26.addWidget(self.frame_3)
+
         self.label_27 = QLabel(self.personnel_records_page)
         self.label_27.setObjectName(u"label_27")
-        self.label_27.setGeometry(QRect(0, 270, 921, 41))
         self.label_27.setFont(font1)
         self.label_27.setStyleSheet(u"background-color: rgb(98, 160, 234);\n"
 "color:white;")
         self.label_27.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_26.addWidget(self.label_27)
+
         self.tableWidget_2 = QTableWidget(self.personnel_records_page)
         if (self.tableWidget_2.columnCount() < 6):
             self.tableWidget_2.setColumnCount(6)
@@ -733,8 +833,10 @@ class Ui_MainWindow(object):
         __qtablewidgetitem5 = QTableWidgetItem()
         self.tableWidget_2.setHorizontalHeaderItem(5, __qtablewidgetitem5)
         self.tableWidget_2.setObjectName(u"tableWidget_2")
-        self.tableWidget_2.setGeometry(QRect(0, 320, 911, 441))
         self.tableWidget_2.horizontalHeader().setDefaultSectionSize(150)
+
+        self.verticalLayout_26.addWidget(self.tableWidget_2)
+
         self.stackedWidget.addWidget(self.personnel_records_page)
         self.placementpage_enlist_page = QWidget()
         self.placementpage_enlist_page.setObjectName(u"placementpage_enlist_page")
@@ -1151,22 +1253,26 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.page_9)
         self.Inactive_personnel_page_01 = QWidget()
         self.Inactive_personnel_page_01.setObjectName(u"Inactive_personnel_page_01")
+        self.verticalLayout_23 = QVBoxLayout(self.Inactive_personnel_page_01)
+        self.verticalLayout_23.setObjectName(u"verticalLayout_23")
         self.stackedWidget_2 = QStackedWidget(self.Inactive_personnel_page_01)
         self.stackedWidget_2.setObjectName(u"stackedWidget_2")
-        self.stackedWidget_2.setGeometry(QRect(0, 0, 911, 731))
         self.Inactive_personnel_page = QWidget()
         self.Inactive_personnel_page.setObjectName(u"Inactive_personnel_page")
+        self.verticalLayout_25 = QVBoxLayout(self.Inactive_personnel_page)
+        self.verticalLayout_25.setObjectName(u"verticalLayout_25")
         self.label_33 = QLabel(self.Inactive_personnel_page)
         self.label_33.setObjectName(u"label_33")
-        self.label_33.setGeometry(QRect(0, 0, 921, 41))
         self.label_33.setFont(font1)
         self.label_33.setLayoutDirection(Qt.LeftToRight)
         self.label_33.setStyleSheet(u"color:white;\n"
 "background-color: rgb(98, 160, 234);")
         self.label_33.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_25.addWidget(self.label_33)
+
         self.frame_5 = QFrame(self.Inactive_personnel_page)
         self.frame_5.setObjectName(u"frame_5")
-        self.frame_5.setGeometry(QRect(0, 50, 911, 201))
         self.frame_5.setFrameShape(QFrame.StyledPanel)
         self.frame_5.setFrameShadow(QFrame.Raised)
         self.verticalLayout_10 = QVBoxLayout(self.frame_5)
@@ -1309,14 +1415,19 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_10.addWidget(self.frame_9)
 
+
+        self.verticalLayout_25.addWidget(self.frame_5)
+
         self.label_43 = QLabel(self.Inactive_personnel_page)
         self.label_43.setObjectName(u"label_43")
-        self.label_43.setGeometry(QRect(0, 260, 921, 41))
         self.label_43.setFont(font1)
         self.label_43.setStyleSheet(u"background-color: rgb(98, 160, 234);\n"
 "\n"
 "color:white;")
         self.label_43.setAlignment(Qt.AlignCenter)
+
+        self.verticalLayout_25.addWidget(self.label_43)
+
         self.tableWidget = QTableWidget(self.Inactive_personnel_page)
         if (self.tableWidget.columnCount() < 6):
             self.tableWidget.setColumnCount(6)
@@ -1333,8 +1444,10 @@ class Ui_MainWindow(object):
         __qtablewidgetitem11 = QTableWidgetItem()
         self.tableWidget.setHorizontalHeaderItem(5, __qtablewidgetitem11)
         self.tableWidget.setObjectName(u"tableWidget")
-        self.tableWidget.setGeometry(QRect(0, 310, 911, 441))
         self.tableWidget.horizontalHeader().setDefaultSectionSize(150)
+
+        self.verticalLayout_25.addWidget(self.tableWidget)
+
         self.stackedWidget_2.addWidget(self.Inactive_personnel_page)
         self.page_12 = QWidget()
         self.page_12.setObjectName(u"page_12")
@@ -1399,45 +1512,27 @@ class Ui_MainWindow(object):
         self.label_52.setGeometry(QRect(20, 60, 401, 51))
         self.label_52.setFont(font3)
         self.stackedWidget_2.addWidget(self.page_20)
+
+        self.verticalLayout_23.addWidget(self.stackedWidget_2)
+
         self.stackedWidget.addWidget(self.Inactive_personnel_page_01)
-        self.top_widget = QWidget(self.centralwidget)
-        self.top_widget.setObjectName(u"top_widget")
-        self.top_widget.setGeometry(QRect(0, 0, 1351, 81))
-        self.top_widget.setStyleSheet(u"QWidget{\n"
-"\n"
-"\n"
-"background-color: #1a659e;\n"
-"color:white;\n"
-"}")
-        self.label = QLabel(self.top_widget)
-        self.label.setObjectName(u"label")
-        self.label.setGeometry(QRect(10, 10, 60, 60))
-        self.label.setMaximumSize(QSize(60, 60))
-        self.label.setPixmap(QPixmap(u":/newPrefix/icon/Logo.png"))
-        self.label.setScaledContents(True)
-        self.label_2 = QLabel(self.top_widget)
-        self.label_2.setObjectName(u"label_2")
-        self.label_2.setGeometry(QRect(90, 10, 451, 51))
-        self.label_2.setStyleSheet(u"QLabel{\n"
-"	font-size:20px;\n"
-"\n"
-"}")
-        self.pushButton_24 = QPushButton(self.top_widget)
-        self.pushButton_24.setObjectName(u"pushButton_24")
-        self.pushButton_24.setGeometry(QRect(1190, 20, 101, 41))
-        icon = QIcon()
-        icon.addFile(u":/ /icon/PersonalRecords.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.pushButton_24.setIcon(icon)
-        self.pushButton_24.setIconSize(QSize(40, 40))
-        self.pushButton_11 = QPushButton(self.top_widget)
-        self.pushButton_11.setObjectName(u"pushButton_11")
-        self.pushButton_11.setGeometry(QRect(1040, 20, 121, 41))
-        self.pushButton_11.setIcon(icon)
-        self.pushButton_11.setIconSize(QSize(40, 40))
+
+        self.verticalLayout_24.addWidget(self.stackedWidget)
+
+
+        self.verticalLayout_21.addWidget(self.main_widget)
+
+
+        self.gridLayout_13.addWidget(self.frame_23, 1, 1, 1, 1)
+
+        self.gridLayout_13.setRowStretch(0, 1)
+        self.gridLayout_13.setRowStretch(1, 8)
+        self.gridLayout_13.setColumnStretch(0, 2)
+        self.gridLayout_13.setColumnStretch(1, 8)
+
+        self.verticalLayout_20.addWidget(self.frame_20)
+
         MainWindow.setCentralWidget(self.centralwidget)
-        self.main_widget.raise_()
-        self.icon_text_widget.raise_()
-        self.top_widget.raise_()
 
         self.retranslateUi(MainWindow)
         self.attrition_btn.toggled.connect(self.attrition_dropdown.setVisible)
@@ -1451,7 +1546,7 @@ class Ui_MainWindow(object):
         self.reenlistment_btn.toggled.connect(self.reenlistmen_dropdown.setVisible)
         self.placement_btn.toggled.connect(self.placement_dropdown.setVisible)
 
-        self.stackedWidget.setCurrentIndex(9)
+        self.stackedWidget.setCurrentIndex(3)
         self.stackedWidget_2.setCurrentIndex(0)
 
 
@@ -1460,6 +1555,9 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
+        self.label_2.setText(QCoreApplication.translate("MainWindow", u"PAF HUMAN RESOURCES MANAGEMENT SYSTEM", None))
+        self.pushButton_11.setText(QCoreApplication.translate("MainWindow", u"ACCOUNT", None))
+        self.pushButton_24.setText(QCoreApplication.translate("MainWindow", u"LOGOUT", None))
         self.personnel_recordsbtn.setText(QCoreApplication.translate("MainWindow", u"PERSONNEL RECORDS", None))
         self.placement_btn.setText(QCoreApplication.translate("MainWindow", u"PLACEMENT", None))
         self.palcement_offr_btn.setText(QCoreApplication.translate("MainWindow", u"OFFICER", None))
@@ -1599,8 +1697,5 @@ class Ui_MainWindow(object):
         self.label_50.setText(QCoreApplication.translate("MainWindow", u"ETAD / SOT", None))
         self.label_51.setText(QCoreApplication.translate("MainWindow", u"ATTRITION", None))
         self.label_52.setText(QCoreApplication.translate("MainWindow", u"INACTIVE PERSONNEL", None))
-        self.label_2.setText(QCoreApplication.translate("MainWindow", u"PAF HUMAN RESOURCES MANAGEMENT SYSTEM", None))
-        self.pushButton_24.setText(QCoreApplication.translate("MainWindow", u"LOGOUT", None))
-        self.pushButton_11.setText(QCoreApplication.translate("MainWindow", u"ACCOUNT", None))
     # retranslateUi
 

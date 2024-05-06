@@ -28,7 +28,8 @@ class MySideBar(QMainWindow,Ui_MainWindow):
             self.attrition_dropdown.setHidden(True)
 
         
-        def uncheck_all():
+        # def uncheck_all():
+
             
         
 
