@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1355</width>
+    <width>1327</width>
     <height>869</height>
    </rect>
   </property>
@@ -863,7 +863,7 @@ color:white
      <rect>
       <x>370</x>
       <y>80</y>
-      <width>941</width>
+      <width>981</width>
       <height>971</height>
      </rect>
     </property>
@@ -882,7 +882,7 @@ color:Black</string>
       </rect>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>3</number>
      </property>
      <widget class="QWidget" name="personnel_records_page">
       <widget class="QLabel" name="label_4">
@@ -900,10 +900,14 @@ color:Black</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(98, 160, 234);</string>
+        <string notr="true">background-color: rgb(98, 160, 234);
+color:white;</string>
        </property>
        <property name="text">
         <string>ACTIVE PERSONNEL RECORDS</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
       <widget class="QFrame" name="frame_3">
@@ -1173,8 +1177,7 @@ color:Black</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(24, 45	, 52);
-
+        <string notr="true">background-color: rgb(98, 160, 234);
 color:white;</string>
        </property>
        <property name="text">
@@ -1267,16 +1270,6 @@ color:white;</string>
         </rect>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_9">
-       <property name="geometry">
-        <rect>
-         <x>150</x>
-         <y>160</y>
-         <width>741</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
       <widget class="QTextEdit" name="textEdit_10">
        <property name="geometry">
         <rect>
@@ -1285,23 +1278,6 @@ color:white;</string>
          <width>741</width>
          <height>31</height>
         </rect>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_30">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>300</y>
-         <width>141</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{font-size:22;}
-</string>
-       </property>
-       <property name="text">
-        <string>Reassignment Date</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_31">
@@ -1319,10 +1295,14 @@ color:white;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(98, 160, 234);</string>
+        <string notr="true">background-color: rgb(98, 160, 234);
+color :White;</string>
        </property>
        <property name="text">
-        <string>Personal Details</string>
+        <string>PERSONAL DETAILS</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
       <widget class="QPushButton" name="pushButton_2">
@@ -1334,28 +1314,17 @@ color:white;</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(98, 160, 234);
+color:white;</string>
+       </property>
        <property name="text">
         <string>Submit</string>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="textEdit_11">
-       <property name="geometry">
-        <rect>
-         <x>150</x>
-         <y>210</y>
-         <width>741</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="textEdit_12">
-       <property name="geometry">
-        <rect>
-         <x>150</x>
-         <y>300</y>
-         <width>741</width>
-         <height>31</height>
-        </rect>
        </property>
       </widget>
       <widget class="QLabel" name="label_32">
@@ -1443,6 +1412,71 @@ color:white;</string>
         <string>Name:</string>
        </property>
       </widget>
+      <widget class="QComboBox" name="comboBox">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>160</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_2">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>200</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_145">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>300</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{font-size:22;}
+</string>
+       </property>
+       <property name="text">
+        <string>Upload Order:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="browser_btn">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>300</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Browse Files</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="UploadOrderTextfield">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>300</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
      </widget>
      <widget class="QWidget" name="Placement_page_officer_page">
       <widget class="QLabel" name="label_6">
@@ -1461,23 +1495,6 @@ color:white;</string>
        </property>
        <property name="text">
         <string>Placement page officer</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_3">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>80</y>
-         <width>131</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{font-size:22;}
-</string>
-       </property>
-       <property name="text">
-        <string>Name:</string>
        </property>
       </widget>
       <widget class="QTextEdit" name="textEdit_2">
@@ -1515,10 +1532,14 @@ color:white;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(98, 160, 234);</string>
+        <string notr="true">background-color: rgb(98, 160, 234);
+color:white;</string>
        </property>
        <property name="text">
-        <string>Personal Detail</string>
+        <string>PERSONAL DETAILS</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
       <widget class="QLabel" name="label_23">
@@ -1530,6 +1551,11 @@ color:white;</string>
          <height>31</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">QLabel{font-size:22;}
 </string>
@@ -1538,45 +1564,12 @@ color:white;</string>
         <string>Present Unit:</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton">
-       <property name="geometry">
-        <rect>
-         <x>150</x>
-         <y>360</y>
-         <width>741</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Submit</string>
-       </property>
-      </widget>
       <widget class="QTextEdit" name="textEdit_6">
        <property name="geometry">
         <rect>
          <x>150</x>
          <y>310</y>
-         <width>741</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="textEdit_3">
-       <property name="geometry">
-        <rect>
-         <x>150</x>
-         <y>170</y>
-         <width>741</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="textEdit_4">
-       <property name="geometry">
-        <rect>
-         <x>150</x>
-         <y>220</y>
-         <width>741</width>
+         <width>231</width>
          <height>31</height>
         </rect>
        </property>
@@ -1589,6 +1582,11 @@ color:white;</string>
          <width>141</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
        </property>
        <property name="styleSheet">
         <string notr="true">QLabel{font-size:22;}
@@ -1607,12 +1605,17 @@ color:white;</string>
          <height>31</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">QLabel{font-size:22;}
 </string>
        </property>
        <property name="text">
-        <string>Sub unit</string>
+        <string>Sub Unit:</string>
        </property>
       </widget>
       <widget class="QTextEdit" name="textEdit_5">
@@ -1634,12 +1637,17 @@ color:white;</string>
          <height>31</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">QLabel{font-size:22;}
 </string>
        </property>
        <property name="text">
-        <string>Reassignment Date</string>
+        <string>Upload Order:</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_25">
@@ -1651,12 +1659,94 @@ color:white;</string>
          <height>31</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>13</pointsize>
+        </font>
+       </property>
        <property name="styleSheet">
         <string notr="true">QLabel{font-size:22;}
 </string>
        </property>
        <property name="text">
-        <string>Reassignment unit</string>
+        <string>Reassigned Unit:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>360</y>
+         <width>741</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>20</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(98, 160, 234);
+color:white;</string>
+       </property>
+       <property name="text">
+        <string>Submit</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_4">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>170</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_3">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>210</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_75">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{font-size:22;}
+</string>
+       </property>
+       <property name="text">
+        <string>Name:</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>390</x>
+         <y>310</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Browse</string>
        </property>
       </widget>
      </widget>
@@ -2303,12 +2393,18 @@ color:white;</string>
            <pointsize>18</pointsize>
           </font>
          </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
          <property name="styleSheet">
           <string notr="true">color:white;
 background-color: rgb(98, 160, 234);</string>
          </property>
          <property name="text">
-          <string>ACTIVE PERSONNEL RECORDS</string>
+          <string>INACTIVE PERSONNEL </string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
          </property>
         </widget>
         <widget class="QFrame" name="frame_5">
@@ -2587,24 +2683,6 @@ color:white;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_13">
-         <property name="geometry">
-          <rect>
-           <x>360</x>
-           <y>0</y>
-           <width>431</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>27</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>INACTIVE PERSONNEL</string>
          </property>
         </widget>
         <widget class="QTableWidget" name="tableWidget">
@@ -2949,34 +3027,18 @@ color:white;
  </resources>
  <connections>
   <connection>
-   <sender>placement_btn</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>placement_dropdown</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>745</x>
-     <y>-899</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>761</x>
-     <y>-739</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>reenlistment_btn</sender>
    <signal>toggled(bool)</signal>
    <receiver>reenlistmen_dropdown</receiver>
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>631</x>
-     <y>-705</y>
+     <x>327</x>
+     <y>311</y>
     </hint>
     <hint type="destinationlabel">
-     <x>667</x>
-     <y>-564</y>
+     <x>327</x>
+     <y>350</y>
     </hint>
    </hints>
   </connection>
@@ -2987,12 +3049,12 @@ color:white;
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>434</x>
-     <y>-535</y>
+     <x>327</x>
+     <y>494</y>
     </hint>
     <hint type="destinationlabel">
-     <x>453</x>
-     <y>-260</y>
+     <x>327</x>
+     <y>533</y>
     </hint>
    </hints>
   </connection>
@@ -3003,12 +3065,12 @@ color:white;
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>511</x>
-     <y>-164</y>
+     <x>327</x>
+     <y>872</y>
     </hint>
     <hint type="destinationlabel">
-     <x>636</x>
-     <y>-126</y>
+     <x>327</x>
+     <y>911</y>
     </hint>
    </hints>
   </connection>
@@ -3019,12 +3081,12 @@ color:white;
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>722</x>
-     <y>-490</y>
+     <x>317</x>
+     <y>543</y>
     </hint>
     <hint type="destinationlabel">
-     <x>638</x>
-     <y>-375</y>
+     <x>317</x>
+     <y>574</y>
     </hint>
    </hints>
   </connection>
@@ -3035,12 +3097,12 @@ color:white;
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>695</x>
-     <y>-336</y>
+     <x>317</x>
+     <y>687</y>
     </hint>
     <hint type="destinationlabel">
-     <x>487</x>
-     <y>-186</y>
+     <x>317</x>
+     <y>718</y>
     </hint>
    </hints>
   </connection>
@@ -3051,12 +3113,12 @@ color:white;
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>446</x>
-     <y>-38</y>
+     <x>327</x>
+     <y>993</y>
     </hint>
     <hint type="destinationlabel">
-     <x>598</x>
-     <y>-1</y>
+     <x>327</x>
+     <y>1032</y>
     </hint>
    </hints>
   </connection>
@@ -3067,12 +3129,12 @@ color:white;
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>580</x>
-     <y>78</y>
+     <x>327</x>
+     <y>1114</y>
     </hint>
     <hint type="destinationlabel">
-     <x>641</x>
-     <y>126</y>
+     <x>327</x>
+     <y>1189</y>
     </hint>
    </hints>
   </connection>
@@ -3083,12 +3145,12 @@ color:white;
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>500</x>
-     <y>204</y>
+     <x>327</x>
+     <y>1267</y>
     </hint>
     <hint type="destinationlabel">
-     <x>550</x>
-     <y>243</y>
+     <x>327</x>
+     <y>1411</y>
     </hint>
    </hints>
   </connection>
@@ -3099,12 +3161,28 @@ color:white;
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>605</x>
-     <y>389</y>
+     <x>327</x>
+     <y>1450</y>
     </hint>
     <hint type="destinationlabel">
-     <x>620</x>
-     <y>718</y>
+     <x>327</x>
+     <y>1532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>placement_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>placement_dropdown</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>327</x>
+     <y>148</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>768</x>
+     <y>450</y>
     </hint>
    </hints>
   </connection>

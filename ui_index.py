@@ -15,18 +15,18 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHeaderView,
-    QLabel, QLineEdit, QMainWindow, QPushButton,
-    QScrollArea, QSizePolicy, QSpacerItem, QStackedWidget,
-    QTableWidget, QTableWidgetItem, QTextEdit, QVBoxLayout,
-    QWidget)
+from PySide6.QtWidgets import (QApplication, QComboBox, QFrame, QGridLayout,
+    QHeaderView, QLabel, QLineEdit, QMainWindow,
+    QPushButton, QScrollArea, QSizePolicy, QSpacerItem,
+    QStackedWidget, QTableWidget, QTableWidgetItem, QTextEdit,
+    QVBoxLayout, QWidget)
 import resources_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1355, 869)
+        MainWindow.resize(1327, 869)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.icon_text_widget = QWidget(self.centralwidget)
@@ -498,7 +498,7 @@ class Ui_MainWindow(object):
 
         self.main_widget = QWidget(self.centralwidget)
         self.main_widget.setObjectName(u"main_widget")
-        self.main_widget.setGeometry(QRect(370, 80, 941, 971))
+        self.main_widget.setGeometry(QRect(370, 80, 981, 971))
         self.main_widget.setStyleSheet(u"background-color:#f8f9fa;\n"
 "\n"
 "color:Black")
@@ -513,7 +513,9 @@ class Ui_MainWindow(object):
         font1 = QFont()
         font1.setPointSize(18)
         self.label_4.setFont(font1)
-        self.label_4.setStyleSheet(u"background-color: rgb(98, 160, 234);")
+        self.label_4.setStyleSheet(u"background-color: rgb(98, 160, 234);\n"
+"color:white;")
+        self.label_4.setAlignment(Qt.AlignCenter)
         self.frame_3 = QFrame(self.personnel_records_page)
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setGeometry(QRect(0, 50, 911, 201))
@@ -665,8 +667,7 @@ class Ui_MainWindow(object):
         self.label_27.setObjectName(u"label_27")
         self.label_27.setGeometry(QRect(0, 270, 921, 41))
         self.label_27.setFont(font1)
-        self.label_27.setStyleSheet(u"background-color: rgb(24, 45	, 52);\n"
-"\n"
+        self.label_27.setStyleSheet(u"background-color: rgb(98, 160, 234);\n"
 "color:white;")
         self.label_27.setAlignment(Qt.AlignCenter)
         self.tableWidget_2 = QTableWidget(self.personnel_records_page)
@@ -702,31 +703,24 @@ class Ui_MainWindow(object):
         self.textEdit_8 = QTextEdit(self.placementpage_enlist_page)
         self.textEdit_8.setObjectName(u"textEdit_8")
         self.textEdit_8.setGeometry(QRect(150, 250, 741, 31))
-        self.textEdit_9 = QTextEdit(self.placementpage_enlist_page)
-        self.textEdit_9.setObjectName(u"textEdit_9")
-        self.textEdit_9.setGeometry(QRect(150, 160, 741, 31))
         self.textEdit_10 = QTextEdit(self.placementpage_enlist_page)
         self.textEdit_10.setObjectName(u"textEdit_10")
         self.textEdit_10.setGeometry(QRect(150, 120, 741, 31))
-        self.label_30 = QLabel(self.placementpage_enlist_page)
-        self.label_30.setObjectName(u"label_30")
-        self.label_30.setGeometry(QRect(0, 300, 141, 31))
-        self.label_30.setStyleSheet(u"QLabel{font-size:22;}\n"
-"")
         self.label_31 = QLabel(self.placementpage_enlist_page)
         self.label_31.setObjectName(u"label_31")
         self.label_31.setGeometry(QRect(0, 0, 921, 41))
         self.label_31.setFont(font1)
-        self.label_31.setStyleSheet(u"background-color: rgb(98, 160, 234);")
+        self.label_31.setStyleSheet(u"background-color: rgb(98, 160, 234);\n"
+"color :White;")
+        self.label_31.setAlignment(Qt.AlignCenter)
         self.pushButton_2 = QPushButton(self.placementpage_enlist_page)
         self.pushButton_2.setObjectName(u"pushButton_2")
         self.pushButton_2.setGeometry(QRect(150, 350, 741, 41))
-        self.textEdit_11 = QTextEdit(self.placementpage_enlist_page)
-        self.textEdit_11.setObjectName(u"textEdit_11")
-        self.textEdit_11.setGeometry(QRect(150, 210, 741, 31))
-        self.textEdit_12 = QTextEdit(self.placementpage_enlist_page)
-        self.textEdit_12.setObjectName(u"textEdit_12")
-        self.textEdit_12.setGeometry(QRect(150, 300, 741, 31))
+        font4 = QFont()
+        font4.setPointSize(20)
+        self.pushButton_2.setFont(font4)
+        self.pushButton_2.setStyleSheet(u"background-color: rgb(98, 160, 234);\n"
+"color:white;")
         self.label_32 = QLabel(self.placementpage_enlist_page)
         self.label_32.setObjectName(u"label_32")
         self.label_32.setGeometry(QRect(0, 120, 141, 31))
@@ -752,6 +746,24 @@ class Ui_MainWindow(object):
         self.label_56.setGeometry(QRect(0, 70, 131, 31))
         self.label_56.setStyleSheet(u"QLabel{font-size:22;}\n"
 "")
+        self.comboBox = QComboBox(self.placementpage_enlist_page)
+        self.comboBox.setObjectName(u"comboBox")
+        self.comboBox.setGeometry(QRect(150, 160, 741, 31))
+        self.comboBox_2 = QComboBox(self.placementpage_enlist_page)
+        self.comboBox_2.setObjectName(u"comboBox_2")
+        self.comboBox_2.setGeometry(QRect(150, 200, 741, 31))
+        self.label_145 = QLabel(self.placementpage_enlist_page)
+        self.label_145.setObjectName(u"label_145")
+        self.label_145.setGeometry(QRect(0, 300, 141, 31))
+        self.label_145.setFont(font2)
+        self.label_145.setStyleSheet(u"QLabel{font-size:22;}\n"
+"")
+        self.browser_btn = QPushButton(self.placementpage_enlist_page)
+        self.browser_btn.setObjectName(u"browser_btn")
+        self.browser_btn.setGeometry(QRect(390, 300, 111, 31))
+        self.UploadOrderTextfield = QTextEdit(self.placementpage_enlist_page)
+        self.UploadOrderTextfield.setObjectName(u"UploadOrderTextfield")
+        self.UploadOrderTextfield.setGeometry(QRect(150, 300, 231, 31))
         self.stackedWidget.addWidget(self.placementpage_enlist_page)
         self.Placement_page_officer_page = QWidget()
         self.Placement_page_officer_page.setObjectName(u"Placement_page_officer_page")
@@ -759,11 +771,6 @@ class Ui_MainWindow(object):
         self.label_6.setObjectName(u"label_6")
         self.label_6.setGeometry(QRect(270, 660, 401, 51))
         self.label_6.setFont(font3)
-        self.label_3 = QLabel(self.Placement_page_officer_page)
-        self.label_3.setObjectName(u"label_3")
-        self.label_3.setGeometry(QRect(0, 80, 131, 31))
-        self.label_3.setStyleSheet(u"QLabel{font-size:22;}\n"
-"")
         self.textEdit_2 = QTextEdit(self.Placement_page_officer_page)
         self.textEdit_2.setObjectName(u"textEdit_2")
         self.textEdit_2.setGeometry(QRect(150, 130, 741, 31))
@@ -774,32 +781,30 @@ class Ui_MainWindow(object):
         self.label_22.setObjectName(u"label_22")
         self.label_22.setGeometry(QRect(0, 10, 921, 41))
         self.label_22.setFont(font1)
-        self.label_22.setStyleSheet(u"background-color: rgb(98, 160, 234);")
+        self.label_22.setStyleSheet(u"background-color: rgb(98, 160, 234);\n"
+"color:white;")
+        self.label_22.setAlignment(Qt.AlignCenter)
         self.label_23 = QLabel(self.Placement_page_officer_page)
         self.label_23.setObjectName(u"label_23")
         self.label_23.setGeometry(QRect(0, 130, 141, 31))
+        self.label_23.setFont(font2)
         self.label_23.setStyleSheet(u"QLabel{font-size:22;}\n"
 "")
-        self.pushButton = QPushButton(self.Placement_page_officer_page)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(150, 360, 741, 41))
         self.textEdit_6 = QTextEdit(self.Placement_page_officer_page)
         self.textEdit_6.setObjectName(u"textEdit_6")
-        self.textEdit_6.setGeometry(QRect(150, 310, 741, 31))
-        self.textEdit_3 = QTextEdit(self.Placement_page_officer_page)
-        self.textEdit_3.setObjectName(u"textEdit_3")
-        self.textEdit_3.setGeometry(QRect(150, 170, 741, 31))
-        self.textEdit_4 = QTextEdit(self.Placement_page_officer_page)
-        self.textEdit_4.setObjectName(u"textEdit_4")
-        self.textEdit_4.setGeometry(QRect(150, 220, 741, 31))
+        self.textEdit_6.setGeometry(QRect(150, 310, 231, 31))
         self.label_29 = QLabel(self.Placement_page_officer_page)
         self.label_29.setObjectName(u"label_29")
         self.label_29.setGeometry(QRect(0, 260, 141, 31))
+        font5 = QFont()
+        font5.setPointSize(11)
+        self.label_29.setFont(font5)
         self.label_29.setStyleSheet(u"QLabel{font-size:22;}\n"
 "")
         self.label_24 = QLabel(self.Placement_page_officer_page)
         self.label_24.setObjectName(u"label_24")
         self.label_24.setGeometry(QRect(0, 220, 141, 31))
+        self.label_24.setFont(font2)
         self.label_24.setStyleSheet(u"QLabel{font-size:22;}\n"
 "")
         self.textEdit_5 = QTextEdit(self.Placement_page_officer_page)
@@ -808,13 +813,38 @@ class Ui_MainWindow(object):
         self.label_28 = QLabel(self.Placement_page_officer_page)
         self.label_28.setObjectName(u"label_28")
         self.label_28.setGeometry(QRect(0, 310, 141, 31))
+        self.label_28.setFont(font2)
         self.label_28.setStyleSheet(u"QLabel{font-size:22;}\n"
 "")
         self.label_25 = QLabel(self.Placement_page_officer_page)
         self.label_25.setObjectName(u"label_25")
         self.label_25.setGeometry(QRect(0, 170, 141, 31))
+        font6 = QFont()
+        font6.setPointSize(13)
+        self.label_25.setFont(font6)
         self.label_25.setStyleSheet(u"QLabel{font-size:22;}\n"
 "")
+        self.pushButton_4 = QPushButton(self.Placement_page_officer_page)
+        self.pushButton_4.setObjectName(u"pushButton_4")
+        self.pushButton_4.setGeometry(QRect(150, 360, 741, 41))
+        self.pushButton_4.setFont(font4)
+        self.pushButton_4.setStyleSheet(u"background-color: rgb(98, 160, 234);\n"
+"color:white;")
+        self.comboBox_4 = QComboBox(self.Placement_page_officer_page)
+        self.comboBox_4.setObjectName(u"comboBox_4")
+        self.comboBox_4.setGeometry(QRect(150, 170, 741, 31))
+        self.comboBox_3 = QComboBox(self.Placement_page_officer_page)
+        self.comboBox_3.setObjectName(u"comboBox_3")
+        self.comboBox_3.setGeometry(QRect(150, 210, 741, 31))
+        self.label_75 = QLabel(self.Placement_page_officer_page)
+        self.label_75.setObjectName(u"label_75")
+        self.label_75.setGeometry(QRect(0, 80, 141, 31))
+        self.label_75.setFont(font2)
+        self.label_75.setStyleSheet(u"QLabel{font-size:22;}\n"
+"")
+        self.pushButton = QPushButton(self.Placement_page_officer_page)
+        self.pushButton.setObjectName(u"pushButton")
+        self.pushButton.setGeometry(QRect(390, 310, 111, 31))
         self.stackedWidget.addWidget(self.Placement_page_officer_page)
         self.placement_Officer_page = QWidget()
         self.placement_Officer_page.setObjectName(u"placement_Officer_page")
@@ -1083,8 +1113,10 @@ class Ui_MainWindow(object):
         self.label_33.setObjectName(u"label_33")
         self.label_33.setGeometry(QRect(0, 0, 921, 41))
         self.label_33.setFont(font1)
+        self.label_33.setLayoutDirection(Qt.LeftToRight)
         self.label_33.setStyleSheet(u"color:white;\n"
 "background-color: rgb(98, 160, 234);")
+        self.label_33.setAlignment(Qt.AlignCenter)
         self.frame_5 = QFrame(self.Inactive_personnel_page)
         self.frame_5.setObjectName(u"frame_5")
         self.frame_5.setGeometry(QRect(0, 50, 911, 201))
@@ -1238,10 +1270,6 @@ class Ui_MainWindow(object):
 "\n"
 "color:white;")
         self.label_43.setAlignment(Qt.AlignCenter)
-        self.label_13 = QLabel(self.Inactive_personnel_page)
-        self.label_13.setObjectName(u"label_13")
-        self.label_13.setGeometry(QRect(360, 0, 431, 41))
-        self.label_13.setFont(font3)
         self.tableWidget = QTableWidget(self.Inactive_personnel_page)
         if (self.tableWidget.columnCount() < 6):
             self.tableWidget.setColumnCount(6)
@@ -1364,7 +1392,6 @@ class Ui_MainWindow(object):
         self.top_widget.raise_()
 
         self.retranslateUi(MainWindow)
-        self.placement_btn.toggled.connect(self.placement_dropdown.setVisible)
         self.reenlistment_btn.toggled.connect(self.reenlistmen_dropdown.setVisible)
         self.schooling_btn.toggled.connect(self.seniority_dropdown.setVisible)
         self.promotion_btn.toggled.connect(self.promotion_dropdown.setVisible)
@@ -1374,8 +1401,9 @@ class Ui_MainWindow(object):
         self.afscmonitoring_btn.toggled.connect(self.afsc_monitoring_dropdown.setVisible)
         self.etad_sot_btn.toggled.connect(self.etad_SOT_dropdown.setVisible)
         self.attrition_btn.toggled.connect(self.attrition_dropdown.setVisible)
+        self.placement_btn.toggled.connect(self.placement_dropdown.setVisible)
 
-        self.stackedWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(3)
         self.stackedWidget_2.setCurrentIndex(0)
 
 
@@ -1447,23 +1475,25 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem5 = self.tableWidget_2.horizontalHeaderItem(5)
         ___qtablewidgetitem5.setText(QCoreApplication.translate("MainWindow", u"ACTION", None));
         self.label_5.setText(QCoreApplication.translate("MainWindow", u"PLACEMENT enlist", None))
-        self.label_30.setText(QCoreApplication.translate("MainWindow", u"Reassignment Date", None))
-        self.label_31.setText(QCoreApplication.translate("MainWindow", u"Personal Details", None))
+        self.label_31.setText(QCoreApplication.translate("MainWindow", u"PERSONAL DETAILS", None))
         self.pushButton_2.setText(QCoreApplication.translate("MainWindow", u"Submit", None))
         self.label_32.setText(QCoreApplication.translate("MainWindow", u"Present Unit:", None))
         self.label_53.setText(QCoreApplication.translate("MainWindow", u"Reassignment unit", None))
         self.label_54.setText(QCoreApplication.translate("MainWindow", u"Sub unit", None))
         self.label_55.setText(QCoreApplication.translate("MainWindow", u"Reassignment Date", None))
         self.label_56.setText(QCoreApplication.translate("MainWindow", u"Name:", None))
+        self.label_145.setText(QCoreApplication.translate("MainWindow", u"Upload Order:", None))
+        self.browser_btn.setText(QCoreApplication.translate("MainWindow", u"Browse Files", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Placement page officer", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Name:", None))
-        self.label_22.setText(QCoreApplication.translate("MainWindow", u"Personal Detail", None))
+        self.label_22.setText(QCoreApplication.translate("MainWindow", u"PERSONAL DETAILS", None))
         self.label_23.setText(QCoreApplication.translate("MainWindow", u"Present Unit:", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Submit", None))
         self.label_29.setText(QCoreApplication.translate("MainWindow", u"Reassignment Date", None))
-        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Sub unit", None))
-        self.label_28.setText(QCoreApplication.translate("MainWindow", u"Reassignment Date", None))
-        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Reassignment unit", None))
+        self.label_24.setText(QCoreApplication.translate("MainWindow", u"Sub Unit:", None))
+        self.label_28.setText(QCoreApplication.translate("MainWindow", u"Upload Order:", None))
+        self.label_25.setText(QCoreApplication.translate("MainWindow", u"Reassigned Unit:", None))
+        self.pushButton_4.setText(QCoreApplication.translate("MainWindow", u"Submit", None))
+        self.label_75.setText(QCoreApplication.translate("MainWindow", u"Name:", None))
+        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"Browse", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"placement /officer page", None))
         self.label_57.setText(QCoreApplication.translate("MainWindow", u"SEARCH", None))
         self.label_58.setText(QCoreApplication.translate("MainWindow", u"Middle Name", None))
@@ -1489,7 +1519,7 @@ class Ui_MainWindow(object):
         self.label_10.setText(QCoreApplication.translate("MainWindow", u"AFSC MONITORING", None))
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"ETAD / SOT", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"ATTRITION", None))
-        self.label_33.setText(QCoreApplication.translate("MainWindow", u"ACTIVE PERSONNEL RECORDS", None))
+        self.label_33.setText(QCoreApplication.translate("MainWindow", u"INACTIVE PERSONNEL ", None))
         self.label_34.setText(QCoreApplication.translate("MainWindow", u"Middle Name", None))
         self.label_35.setText(QCoreApplication.translate("MainWindow", u"Last Name", None))
         self.label_36.setText(QCoreApplication.translate("MainWindow", u"Sufffix", None))
@@ -1500,7 +1530,6 @@ class Ui_MainWindow(object):
         self.label_41.setText(QCoreApplication.translate("MainWindow", u"Rank", None))
         self.label_42.setText(QCoreApplication.translate("MainWindow", u"Classification", None))
         self.label_43.setText(QCoreApplication.translate("MainWindow", u"SEARCH", None))
-        self.label_13.setText(QCoreApplication.translate("MainWindow", u"INACTIVE PERSONNEL", None))
         ___qtablewidgetitem6 = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"NR", None));
         ___qtablewidgetitem7 = self.tableWidget.horizontalHeaderItem(1)

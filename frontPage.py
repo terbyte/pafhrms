@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QMainWindow,QMenu
+from PySide6.QtWidgets import QMainWindow,QMenu, QFileDialog
 from PySide6.QtGui import QAction
 # from ui_index import Ui_MainWindow
 from ui_index import Ui_MainWindow
@@ -10,6 +10,7 @@ class MySideBar(QMainWindow,Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
         self.setWindowTitle("SideBar Menu")
+
 
 
         #HIDING ALL THE DROPDOWNS ON DEFAULT
@@ -24,16 +25,18 @@ class MySideBar(QMainWindow,Ui_MainWindow):
             self.placement_dropdown.setHidden(True)
             self.etad_SOT_dropdown.setHidden(True)
             self.attrition_dropdown.setHidden(True)
+        
+
 
         hideEmall()
 
 
         self.personnel_recordsbtn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.personnel_records_page))
-        #palcement_offr_btn
         self.inactivepersonnel_btn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.Inactive_personnel_page_01))
         self.palcement_offr_btn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.Placement_page_officer_page))
         self.placementenlist_btn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.placementpage_enlist_page))
         self.palcement_offr_btn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.Placement_page_officer_page))
+        # self.browser_btn.clicked.connect(open_file_dialog)
 
     
 
