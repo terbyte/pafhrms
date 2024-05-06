@@ -26,7 +26,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1327, 869)
+        MainWindow.resize(1518, 869)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.icon_text_widget = QWidget(self.centralwidget)
@@ -34,7 +34,7 @@ class Ui_MainWindow(object):
         self.icon_text_widget.setGeometry(QRect(0, 80, 371, 731))
         self.icon_text_widget.setStyleSheet(u"QWidget{\n"
 "\n"
-"background-color: rgb(24, 45	, 52);\n"
+"background-color: #1a659e;\n"
 "color:white\n"
 "\n"
 "}\n"
@@ -52,6 +52,7 @@ class Ui_MainWindow(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.frame_4 = QFrame(self.scrollAreaWidgetContents)
         self.frame_4.setObjectName(u"frame_4")
+        self.frame_4.setStyleSheet(u"")
         self.frame_4.setFrameShape(QFrame.StyledPanel)
         self.frame_4.setFrameShadow(QFrame.Raised)
         self.verticalLayout_6 = QVBoxLayout(self.frame_4)
@@ -66,6 +67,7 @@ class Ui_MainWindow(object):
         self.personnel_recordsbtn.setStyleSheet(u"")
         self.personnel_recordsbtn.setIconSize(QSize(30, 30))
         self.personnel_recordsbtn.setCheckable(False)
+        self.personnel_recordsbtn.setFlat(True)
 
         self.verticalLayout_6.addWidget(self.personnel_recordsbtn)
 
@@ -75,7 +77,7 @@ class Ui_MainWindow(object):
         self.placement_btn.setStyleSheet(u"")
         self.placement_btn.setIconSize(QSize(30, 30))
         self.placement_btn.setCheckable(True)
-        self.placement_btn.setFlat(False)
+        self.placement_btn.setFlat(True)
 
         self.verticalLayout_6.addWidget(self.placement_btn)
 
@@ -83,7 +85,8 @@ class Ui_MainWindow(object):
         self.placement_dropdown.setObjectName(u"placement_dropdown")
         self.placement_dropdown.setStyleSheet(u"QWidget{\n"
 "\n"
-"background-color: rgb(24, 45	, 52);\n"
+"\n"
+"background-color: #1a659e;\n"
 "color:white\n"
 "\n"
 "}\n"
@@ -95,24 +98,28 @@ class Ui_MainWindow(object):
         self.palcement_offr_btn = QPushButton(self.placement_dropdown)
         self.palcement_offr_btn.setObjectName(u"palcement_offr_btn")
         self.palcement_offr_btn.setCheckable(False)
+        self.palcement_offr_btn.setFlat(True)
 
         self.verticalLayout_2.addWidget(self.palcement_offr_btn)
 
         self.placementenlist_btn = QPushButton(self.placement_dropdown)
         self.placementenlist_btn.setObjectName(u"placementenlist_btn")
         self.placementenlist_btn.setCheckable(False)
+        self.placementenlist_btn.setFlat(True)
 
         self.verticalLayout_2.addWidget(self.placementenlist_btn)
 
         self.pushButton_27 = QPushButton(self.placement_dropdown)
         self.pushButton_27.setObjectName(u"pushButton_27")
         self.pushButton_27.setCheckable(False)
+        self.pushButton_27.setFlat(True)
 
         self.verticalLayout_2.addWidget(self.pushButton_27)
 
         self.pushButton_28 = QPushButton(self.placement_dropdown)
         self.pushButton_28.setObjectName(u"pushButton_28")
         self.pushButton_28.setCheckable(False)
+        self.pushButton_28.setFlat(True)
 
         self.verticalLayout_2.addWidget(self.pushButton_28)
 
@@ -125,6 +132,7 @@ class Ui_MainWindow(object):
         self.reenlistment_btn.setStyleSheet(u"")
         self.reenlistment_btn.setIconSize(QSize(30, 30))
         self.reenlistment_btn.setCheckable(True)
+        self.reenlistment_btn.setFlat(True)
 
         self.verticalLayout_6.addWidget(self.reenlistment_btn)
 
@@ -132,7 +140,8 @@ class Ui_MainWindow(object):
         self.reenlistmen_dropdown.setObjectName(u"reenlistmen_dropdown")
         self.reenlistmen_dropdown.setStyleSheet(u"QWidget{\n"
 "\n"
-"background-color: rgb(24, 45	, 52);\n"
+"\n"
+"background-color: #1a659e;\n"
 "color:white\n"
 "\n"
 "}\n"
@@ -144,24 +153,28 @@ class Ui_MainWindow(object):
         self.pushButton_30 = QPushButton(self.reenlistmen_dropdown)
         self.pushButton_30.setObjectName(u"pushButton_30")
         self.pushButton_30.setCheckable(False)
+        self.pushButton_30.setFlat(True)
 
         self.verticalLayout_3.addWidget(self.pushButton_30)
 
         self.pushButton_31 = QPushButton(self.reenlistmen_dropdown)
         self.pushButton_31.setObjectName(u"pushButton_31")
         self.pushButton_31.setCheckable(False)
+        self.pushButton_31.setFlat(True)
 
         self.verticalLayout_3.addWidget(self.pushButton_31)
 
         self.pushButton_32 = QPushButton(self.reenlistmen_dropdown)
         self.pushButton_32.setObjectName(u"pushButton_32")
         self.pushButton_32.setCheckable(False)
+        self.pushButton_32.setFlat(True)
 
         self.verticalLayout_3.addWidget(self.pushButton_32)
 
         self.pushButton_33 = QPushButton(self.reenlistmen_dropdown)
         self.pushButton_33.setObjectName(u"pushButton_33")
         self.pushButton_33.setCheckable(False)
+        self.pushButton_33.setFlat(True)
 
         self.verticalLayout_3.addWidget(self.pushButton_33)
 
@@ -174,6 +187,7 @@ class Ui_MainWindow(object):
         self.schooling_btn.setStyleSheet(u"")
         self.schooling_btn.setIconSize(QSize(30, 30))
         self.schooling_btn.setCheckable(True)
+        self.schooling_btn.setFlat(True)
 
         self.verticalLayout_6.addWidget(self.schooling_btn)
 
@@ -181,7 +195,7 @@ class Ui_MainWindow(object):
         self.seniority_dropdown.setObjectName(u"seniority_dropdown")
         self.seniority_dropdown.setStyleSheet(u"QWidget{\n"
 "\n"
-"background-color: rgb(24, 45	, 52);\n"
+"background-color: #1a659e;\n"
 "color:white\n"
 "\n"
 "}\n"
@@ -193,6 +207,7 @@ class Ui_MainWindow(object):
         self.pushButton_46 = QPushButton(self.seniority_dropdown)
         self.pushButton_46.setObjectName(u"pushButton_46")
         self.pushButton_46.setCheckable(True)
+        self.pushButton_46.setFlat(True)
 
         self.verticalLayout_15.addWidget(self.pushButton_46)
 
@@ -200,7 +215,8 @@ class Ui_MainWindow(object):
         self.officerschooling_dropdown.setObjectName(u"officerschooling_dropdown")
         self.officerschooling_dropdown.setStyleSheet(u"QWidget{\n"
 "\n"
-"background-color: rgb(24, 45	, 52);\n"
+"\n"
+"background-color: #1a659e;\n"
 "color:white\n"
 "\n"
 "}\n"
@@ -212,18 +228,21 @@ class Ui_MainWindow(object):
         self.pushButton_48 = QPushButton(self.officerschooling_dropdown)
         self.pushButton_48.setObjectName(u"pushButton_48")
         self.pushButton_48.setCheckable(False)
+        self.pushButton_48.setFlat(True)
 
         self.verticalLayout_17.addWidget(self.pushButton_48)
 
         self.pushButton_49 = QPushButton(self.officerschooling_dropdown)
         self.pushButton_49.setObjectName(u"pushButton_49")
         self.pushButton_49.setCheckable(False)
+        self.pushButton_49.setFlat(True)
 
         self.verticalLayout_17.addWidget(self.pushButton_49)
 
         self.pushButton_50 = QPushButton(self.officerschooling_dropdown)
         self.pushButton_50.setObjectName(u"pushButton_50")
         self.pushButton_50.setCheckable(False)
+        self.pushButton_50.setFlat(True)
 
         self.verticalLayout_17.addWidget(self.pushButton_50)
 
@@ -233,6 +252,7 @@ class Ui_MainWindow(object):
         self.pushButton_47 = QPushButton(self.seniority_dropdown)
         self.pushButton_47.setObjectName(u"pushButton_47")
         self.pushButton_47.setCheckable(True)
+        self.pushButton_47.setFlat(True)
 
         self.verticalLayout_15.addWidget(self.pushButton_47)
 
@@ -240,8 +260,8 @@ class Ui_MainWindow(object):
         self.elinstschooling_dropdown.setObjectName(u"elinstschooling_dropdown")
         self.elinstschooling_dropdown.setStyleSheet(u"QWidget{\n"
 "\n"
-"background-color: rgb(24, 45	, 52);\n"
-"color:white\n"
+"\n"
+"background-color: #1a659e;color:white\n"
 "\n"
 "}\n"
 "")
@@ -252,24 +272,28 @@ class Ui_MainWindow(object):
         self.pushButton_52 = QPushButton(self.elinstschooling_dropdown)
         self.pushButton_52.setObjectName(u"pushButton_52")
         self.pushButton_52.setCheckable(False)
+        self.pushButton_52.setFlat(True)
 
         self.verticalLayout_19.addWidget(self.pushButton_52)
 
         self.pushButton_53 = QPushButton(self.elinstschooling_dropdown)
         self.pushButton_53.setObjectName(u"pushButton_53")
         self.pushButton_53.setCheckable(False)
+        self.pushButton_53.setFlat(True)
 
         self.verticalLayout_19.addWidget(self.pushButton_53)
 
         self.pushButton_51 = QPushButton(self.elinstschooling_dropdown)
         self.pushButton_51.setObjectName(u"pushButton_51")
         self.pushButton_51.setCheckable(False)
+        self.pushButton_51.setFlat(True)
 
         self.verticalLayout_19.addWidget(self.pushButton_51)
 
         self.pushButton_54 = QPushButton(self.elinstschooling_dropdown)
         self.pushButton_54.setObjectName(u"pushButton_54")
         self.pushButton_54.setCheckable(False)
+        self.pushButton_54.setFlat(True)
 
         self.verticalLayout_19.addWidget(self.pushButton_54)
 
@@ -285,6 +309,7 @@ class Ui_MainWindow(object):
         self.promotion_btn.setStyleSheet(u"")
         self.promotion_btn.setIconSize(QSize(30, 30))
         self.promotion_btn.setCheckable(True)
+        self.promotion_btn.setFlat(True)
 
         self.verticalLayout_6.addWidget(self.promotion_btn)
 
@@ -292,7 +317,8 @@ class Ui_MainWindow(object):
         self.promotion_dropdown.setObjectName(u"promotion_dropdown")
         self.promotion_dropdown.setStyleSheet(u"QWidget{\n"
 "\n"
-"background-color: rgb(24, 45	, 52);\n"
+"\n"
+"background-color: #1a659e;\n"
 "color:white\n"
 "\n"
 "}\n"
@@ -304,12 +330,14 @@ class Ui_MainWindow(object):
         self.pushButton_40 = QPushButton(self.promotion_dropdown)
         self.pushButton_40.setObjectName(u"pushButton_40")
         self.pushButton_40.setCheckable(False)
+        self.pushButton_40.setFlat(True)
 
         self.verticalLayout_9.addWidget(self.pushButton_40)
 
         self.pushButton_41 = QPushButton(self.promotion_dropdown)
         self.pushButton_41.setObjectName(u"pushButton_41")
         self.pushButton_41.setCheckable(False)
+        self.pushButton_41.setFlat(True)
 
         self.verticalLayout_9.addWidget(self.pushButton_41)
 
@@ -322,6 +350,7 @@ class Ui_MainWindow(object):
         self.seniority_liner_btn.setStyleSheet(u"")
         self.seniority_liner_btn.setIconSize(QSize(30, 30))
         self.seniority_liner_btn.setCheckable(True)
+        self.seniority_liner_btn.setFlat(True)
 
         self.verticalLayout_6.addWidget(self.seniority_liner_btn)
 
@@ -329,7 +358,8 @@ class Ui_MainWindow(object):
         self.schooling_dropdown.setObjectName(u"schooling_dropdown")
         self.schooling_dropdown.setStyleSheet(u"QWidget{\n"
 "\n"
-"background-color: rgb(24, 45	, 52);\n"
+"\n"
+"background-color: #1a659e;\n"
 "color:white\n"
 "\n"
 "}\n"
@@ -341,12 +371,14 @@ class Ui_MainWindow(object):
         self.pushButton_36 = QPushButton(self.schooling_dropdown)
         self.pushButton_36.setObjectName(u"pushButton_36")
         self.pushButton_36.setCheckable(True)
+        self.pushButton_36.setFlat(True)
 
         self.verticalLayout_5.addWidget(self.pushButton_36)
 
         self.pushButton_37 = QPushButton(self.schooling_dropdown)
         self.pushButton_37.setObjectName(u"pushButton_37")
         self.pushButton_37.setCheckable(True)
+        self.pushButton_37.setFlat(True)
 
         self.verticalLayout_5.addWidget(self.pushButton_37)
 
@@ -359,6 +391,7 @@ class Ui_MainWindow(object):
         self.afscmonitoring_btn.setStyleSheet(u"")
         self.afscmonitoring_btn.setIconSize(QSize(30, 30))
         self.afscmonitoring_btn.setCheckable(True)
+        self.afscmonitoring_btn.setFlat(True)
 
         self.verticalLayout_6.addWidget(self.afscmonitoring_btn)
 
@@ -366,7 +399,8 @@ class Ui_MainWindow(object):
         self.afsc_monitoring_dropdown.setObjectName(u"afsc_monitoring_dropdown")
         self.afsc_monitoring_dropdown.setStyleSheet(u"QWidget{\n"
 "\n"
-"background-color: rgb(24, 45	, 52);\n"
+"\n"
+"background-color: #1a659e;\n"
 "color:white\n"
 "\n"
 "}\n"
@@ -378,12 +412,14 @@ class Ui_MainWindow(object):
         self.pushButton_42 = QPushButton(self.afsc_monitoring_dropdown)
         self.pushButton_42.setObjectName(u"pushButton_42")
         self.pushButton_42.setCheckable(False)
+        self.pushButton_42.setFlat(True)
 
         self.verticalLayout_11.addWidget(self.pushButton_42)
 
         self.pushButton_43 = QPushButton(self.afsc_monitoring_dropdown)
         self.pushButton_43.setObjectName(u"pushButton_43")
         self.pushButton_43.setCheckable(False)
+        self.pushButton_43.setFlat(True)
 
         self.verticalLayout_11.addWidget(self.pushButton_43)
 
@@ -396,6 +432,7 @@ class Ui_MainWindow(object):
         self.etad_sot_btn.setStyleSheet(u"")
         self.etad_sot_btn.setIconSize(QSize(30, 30))
         self.etad_sot_btn.setCheckable(True)
+        self.etad_sot_btn.setFlat(True)
 
         self.verticalLayout_6.addWidget(self.etad_sot_btn)
 
@@ -403,7 +440,8 @@ class Ui_MainWindow(object):
         self.etad_SOT_dropdown.setObjectName(u"etad_SOT_dropdown")
         self.etad_SOT_dropdown.setStyleSheet(u"QWidget{\n"
 "\n"
-"background-color: rgb(24, 45	, 52);\n"
+"\n"
+"background-color: #1a659e;\n"
 "color:white\n"
 "\n"
 "}\n"
@@ -415,24 +453,28 @@ class Ui_MainWindow(object):
         self.pushButton_34 = QPushButton(self.etad_SOT_dropdown)
         self.pushButton_34.setObjectName(u"pushButton_34")
         self.pushButton_34.setCheckable(False)
+        self.pushButton_34.setFlat(True)
 
         self.verticalLayout_13.addWidget(self.pushButton_34)
 
         self.pushButton_35 = QPushButton(self.etad_SOT_dropdown)
         self.pushButton_35.setObjectName(u"pushButton_35")
         self.pushButton_35.setCheckable(False)
+        self.pushButton_35.setFlat(True)
 
         self.verticalLayout_13.addWidget(self.pushButton_35)
 
         self.pushButton_44 = QPushButton(self.etad_SOT_dropdown)
         self.pushButton_44.setObjectName(u"pushButton_44")
         self.pushButton_44.setCheckable(False)
+        self.pushButton_44.setFlat(True)
 
         self.verticalLayout_13.addWidget(self.pushButton_44)
 
         self.pushButton_45 = QPushButton(self.etad_SOT_dropdown)
         self.pushButton_45.setObjectName(u"pushButton_45")
         self.pushButton_45.setCheckable(False)
+        self.pushButton_45.setFlat(True)
 
         self.verticalLayout_13.addWidget(self.pushButton_45)
 
@@ -445,6 +487,7 @@ class Ui_MainWindow(object):
         self.attrition_btn.setStyleSheet(u"")
         self.attrition_btn.setIconSize(QSize(30, 30))
         self.attrition_btn.setCheckable(True)
+        self.attrition_btn.setFlat(True)
 
         self.verticalLayout_6.addWidget(self.attrition_btn)
 
@@ -452,7 +495,8 @@ class Ui_MainWindow(object):
         self.attrition_dropdown.setObjectName(u"attrition_dropdown")
         self.attrition_dropdown.setStyleSheet(u"QWidget{\n"
 "\n"
-"background-color: rgb(24, 45	, 52);\n"
+"\n"
+"background-color: #1a659e;\n"
 "color:white\n"
 "\n"
 "}\n"
@@ -464,12 +508,14 @@ class Ui_MainWindow(object):
         self.pushButton_55 = QPushButton(self.attrition_dropdown)
         self.pushButton_55.setObjectName(u"pushButton_55")
         self.pushButton_55.setCheckable(False)
+        self.pushButton_55.setFlat(True)
 
         self.verticalLayout_16.addWidget(self.pushButton_55)
 
         self.pushButton_56 = QPushButton(self.attrition_dropdown)
         self.pushButton_56.setObjectName(u"pushButton_56")
         self.pushButton_56.setCheckable(False)
+        self.pushButton_56.setFlat(True)
 
         self.verticalLayout_16.addWidget(self.pushButton_56)
 
@@ -482,6 +528,7 @@ class Ui_MainWindow(object):
         self.inactivepersonnel_btn.setStyleSheet(u"")
         self.inactivepersonnel_btn.setIconSize(QSize(30, 30))
         self.inactivepersonnel_btn.setCheckable(False)
+        self.inactivepersonnel_btn.setFlat(True)
 
         self.verticalLayout_6.addWidget(self.inactivepersonnel_btn)
 
@@ -504,7 +551,7 @@ class Ui_MainWindow(object):
 "color:Black")
         self.stackedWidget = QStackedWidget(self.main_widget)
         self.stackedWidget.setObjectName(u"stackedWidget")
-        self.stackedWidget.setGeometry(QRect(10, 10, 911, 731))
+        self.stackedWidget.setGeometry(QRect(10, 10, 941, 731))
         self.personnel_records_page = QWidget()
         self.personnel_records_page.setObjectName(u"personnel_records_page")
         self.label_4 = QLabel(self.personnel_records_page)
@@ -752,18 +799,18 @@ class Ui_MainWindow(object):
         self.comboBox_2 = QComboBox(self.placementpage_enlist_page)
         self.comboBox_2.setObjectName(u"comboBox_2")
         self.comboBox_2.setGeometry(QRect(150, 200, 741, 31))
+        self.textEdit_28 = QTextEdit(self.placementpage_enlist_page)
+        self.textEdit_28.setObjectName(u"textEdit_28")
+        self.textEdit_28.setGeometry(QRect(150, 290, 231, 31))
+        self.pushButton_9 = QPushButton(self.placementpage_enlist_page)
+        self.pushButton_9.setObjectName(u"pushButton_9")
+        self.pushButton_9.setGeometry(QRect(400, 290, 111, 31))
         self.label_145 = QLabel(self.placementpage_enlist_page)
         self.label_145.setObjectName(u"label_145")
-        self.label_145.setGeometry(QRect(0, 300, 141, 31))
+        self.label_145.setGeometry(QRect(0, 290, 141, 31))
         self.label_145.setFont(font2)
         self.label_145.setStyleSheet(u"QLabel{font-size:22;}\n"
 "")
-        self.browser_btn = QPushButton(self.placementpage_enlist_page)
-        self.browser_btn.setObjectName(u"browser_btn")
-        self.browser_btn.setGeometry(QRect(390, 300, 111, 31))
-        self.UploadOrderTextfield = QTextEdit(self.placementpage_enlist_page)
-        self.UploadOrderTextfield.setObjectName(u"UploadOrderTextfield")
-        self.UploadOrderTextfield.setGeometry(QRect(150, 300, 231, 31))
         self.stackedWidget.addWidget(self.placementpage_enlist_page)
         self.Placement_page_officer_page = QWidget()
         self.Placement_page_officer_page.setObjectName(u"Placement_page_officer_page")
@@ -826,7 +873,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton_4 = QPushButton(self.Placement_page_officer_page)
         self.pushButton_4.setObjectName(u"pushButton_4")
-        self.pushButton_4.setGeometry(QRect(150, 360, 741, 41))
+        self.pushButton_4.setGeometry(QRect(150, 350, 741, 41))
         self.pushButton_4.setFont(font4)
         self.pushButton_4.setStyleSheet(u"background-color: rgb(98, 160, 234);\n"
 "color:white;")
@@ -844,7 +891,7 @@ class Ui_MainWindow(object):
 "")
         self.pushButton = QPushButton(self.Placement_page_officer_page)
         self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(390, 310, 111, 31))
+        self.pushButton.setGeometry(QRect(400, 310, 111, 31))
         self.stackedWidget.addWidget(self.Placement_page_officer_page)
         self.placement_Officer_page = QWidget()
         self.placement_Officer_page.setObjectName(u"placement_Officer_page")
@@ -1358,7 +1405,8 @@ class Ui_MainWindow(object):
         self.top_widget.setGeometry(QRect(0, 0, 1351, 81))
         self.top_widget.setStyleSheet(u"QWidget{\n"
 "\n"
-"background-color: rgb(0, 62, 63);\n"
+"\n"
+"background-color: #1a659e;\n"
 "color:white;\n"
 "}")
         self.label = QLabel(self.top_widget)
@@ -1392,18 +1440,18 @@ class Ui_MainWindow(object):
         self.top_widget.raise_()
 
         self.retranslateUi(MainWindow)
-        self.reenlistment_btn.toggled.connect(self.reenlistmen_dropdown.setVisible)
-        self.schooling_btn.toggled.connect(self.seniority_dropdown.setVisible)
-        self.promotion_btn.toggled.connect(self.promotion_dropdown.setVisible)
-        self.pushButton_46.toggled.connect(self.officerschooling_dropdown.setVisible)
-        self.pushButton_47.toggled.connect(self.elinstschooling_dropdown.setVisible)
-        self.seniority_liner_btn.toggled.connect(self.schooling_dropdown.setVisible)
-        self.afscmonitoring_btn.toggled.connect(self.afsc_monitoring_dropdown.setVisible)
-        self.etad_sot_btn.toggled.connect(self.etad_SOT_dropdown.setVisible)
         self.attrition_btn.toggled.connect(self.attrition_dropdown.setVisible)
+        self.etad_sot_btn.toggled.connect(self.etad_SOT_dropdown.setVisible)
+        self.afscmonitoring_btn.toggled.connect(self.afsc_monitoring_dropdown.setVisible)
+        self.seniority_liner_btn.toggled.connect(self.schooling_dropdown.setVisible)
+        self.promotion_btn.toggled.connect(self.promotion_dropdown.setVisible)
+        self.schooling_btn.toggled.connect(self.seniority_dropdown.setVisible)
+        self.pushButton_47.toggled.connect(self.elinstschooling_dropdown.setVisible)
+        self.pushButton_46.toggled.connect(self.officerschooling_dropdown.setVisible)
+        self.reenlistment_btn.toggled.connect(self.reenlistmen_dropdown.setVisible)
         self.placement_btn.toggled.connect(self.placement_dropdown.setVisible)
 
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(9)
         self.stackedWidget_2.setCurrentIndex(0)
 
 
@@ -1482,8 +1530,8 @@ class Ui_MainWindow(object):
         self.label_54.setText(QCoreApplication.translate("MainWindow", u"Sub unit", None))
         self.label_55.setText(QCoreApplication.translate("MainWindow", u"Reassignment Date", None))
         self.label_56.setText(QCoreApplication.translate("MainWindow", u"Name:", None))
+        self.pushButton_9.setText(QCoreApplication.translate("MainWindow", u"Browse", None))
         self.label_145.setText(QCoreApplication.translate("MainWindow", u"Upload Order:", None))
-        self.browser_btn.setText(QCoreApplication.translate("MainWindow", u"Browse Files", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Placement page officer", None))
         self.label_22.setText(QCoreApplication.translate("MainWindow", u"PERSONAL DETAILS", None))
         self.label_23.setText(QCoreApplication.translate("MainWindow", u"Present Unit:", None))
@@ -1533,13 +1581,13 @@ class Ui_MainWindow(object):
         ___qtablewidgetitem6 = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem6.setText(QCoreApplication.translate("MainWindow", u"NR", None));
         ___qtablewidgetitem7 = self.tableWidget.horizontalHeaderItem(1)
-        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"New Column", None));
+        ___qtablewidgetitem7.setText(QCoreApplication.translate("MainWindow", u"AFSN", None));
         ___qtablewidgetitem8 = self.tableWidget.horizontalHeaderItem(2)
         ___qtablewidgetitem8.setText(QCoreApplication.translate("MainWindow", u"RANK", None));
         ___qtablewidgetitem9 = self.tableWidget.horizontalHeaderItem(3)
-        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"New Column", None));
+        ___qtablewidgetitem9.setText(QCoreApplication.translate("MainWindow", u"FULLNAME", None));
         ___qtablewidgetitem10 = self.tableWidget.horizontalHeaderItem(4)
-        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"FULLNAME", None));
+        ___qtablewidgetitem10.setText(QCoreApplication.translate("MainWindow", u"UNIT", None));
         ___qtablewidgetitem11 = self.tableWidget.horizontalHeaderItem(5)
         ___qtablewidgetitem11.setText(QCoreApplication.translate("MainWindow", u"ACTION", None));
         self.label_44.setText(QCoreApplication.translate("MainWindow", u"PLACEMENT", None))

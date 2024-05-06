@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1327</width>
+    <width>1518</width>
     <height>869</height>
    </rect>
   </property>
@@ -26,7 +26,7 @@
     <property name="styleSheet">
      <string notr="true">QWidget{
 
-background-color: rgb(24, 45	, 52);
+background-color: #1a659e;
 color:white
 
 }
@@ -56,6 +56,9 @@ color:white
         <layout class="QVBoxLayout" name="verticalLayout">
          <item>
           <widget class="QFrame" name="frame_4">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
            <property name="frameShape">
             <enum>QFrame::StyledPanel</enum>
            </property>
@@ -88,6 +91,9 @@ color:white
               <property name="checkable">
                <bool>false</bool>
               </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
              </widget>
             </item>
             <item>
@@ -116,7 +122,7 @@ color:white
                <bool>true</bool>
               </property>
               <property name="flat">
-               <bool>false</bool>
+               <bool>true</bool>
               </property>
              </widget>
             </item>
@@ -125,7 +131,8 @@ color:white
               <property name="styleSheet">
                <string notr="true">QWidget{
 
-background-color: rgb(24, 45	, 52);
+
+background-color: #1a659e;
 color:white
 
 }
@@ -146,6 +153,9 @@ color:white
                  <property name="checkable">
                   <bool>false</bool>
                  </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -155,6 +165,9 @@ color:white
                  </property>
                  <property name="checkable">
                   <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
                  </property>
                 </widget>
                </item>
@@ -166,6 +179,9 @@ color:white
                  <property name="checkable">
                   <bool>false</bool>
                  </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -175,6 +191,9 @@ color:white
                  </property>
                  <property name="checkable">
                   <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
                  </property>
                 </widget>
                </item>
@@ -206,6 +225,9 @@ color:white
               <property name="checkable">
                <bool>true</bool>
               </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
              </widget>
             </item>
             <item>
@@ -213,7 +235,8 @@ color:white
               <property name="styleSheet">
                <string notr="true">QWidget{
 
-background-color: rgb(24, 45	, 52);
+
+background-color: #1a659e;
 color:white
 
 }
@@ -234,6 +257,9 @@ color:white
                  <property name="checkable">
                   <bool>false</bool>
                  </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -243,6 +269,9 @@ color:white
                  </property>
                  <property name="checkable">
                   <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
                  </property>
                 </widget>
                </item>
@@ -254,6 +283,9 @@ color:white
                  <property name="checkable">
                   <bool>false</bool>
                  </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -263,6 +295,9 @@ color:white
                  </property>
                  <property name="checkable">
                   <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
                  </property>
                 </widget>
                </item>
@@ -294,6 +329,9 @@ color:white
               <property name="checkable">
                <bool>true</bool>
               </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
              </widget>
             </item>
             <item>
@@ -301,7 +339,7 @@ color:white
               <property name="styleSheet">
                <string notr="true">QWidget{
 
-background-color: rgb(24, 45	, 52);
+background-color: #1a659e;
 color:white
 
 }
@@ -322,6 +360,9 @@ color:white
                  <property name="checkable">
                   <bool>true</bool>
                  </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -329,7 +370,8 @@ color:white
                  <property name="styleSheet">
                   <string notr="true">QWidget{
 
-background-color: rgb(24, 45	, 52);
+
+background-color: #1a659e;
 color:white
 
 }
@@ -350,6 +392,9 @@ color:white
                     <property name="checkable">
                      <bool>false</bool>
                     </property>
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
                    </widget>
                   </item>
                   <item>
@@ -360,6 +405,9 @@ color:white
                     <property name="checkable">
                      <bool>false</bool>
                     </property>
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
                    </widget>
                   </item>
                   <item>
@@ -369,6 +417,9 @@ color:white
                     </property>
                     <property name="checkable">
                      <bool>false</bool>
+                    </property>
+                    <property name="flat">
+                     <bool>true</bool>
                     </property>
                    </widget>
                   </item>
@@ -383,6 +434,9 @@ color:white
                  <property name="checkable">
                   <bool>true</bool>
                  </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -390,8 +444,8 @@ color:white
                  <property name="styleSheet">
                   <string notr="true">QWidget{
 
-background-color: rgb(24, 45	, 52);
-color:white
+
+background-color: #1a659e;color:white
 
 }
 </string>
@@ -411,6 +465,9 @@ color:white
                     <property name="checkable">
                      <bool>false</bool>
                     </property>
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
                    </widget>
                   </item>
                   <item>
@@ -420,6 +477,9 @@ color:white
                     </property>
                     <property name="checkable">
                      <bool>false</bool>
+                    </property>
+                    <property name="flat">
+                     <bool>true</bool>
                     </property>
                    </widget>
                   </item>
@@ -431,6 +491,9 @@ color:white
                     <property name="checkable">
                      <bool>false</bool>
                     </property>
+                    <property name="flat">
+                     <bool>true</bool>
+                    </property>
                    </widget>
                   </item>
                   <item>
@@ -440,6 +503,9 @@ color:white
                     </property>
                     <property name="checkable">
                      <bool>false</bool>
+                    </property>
+                    <property name="flat">
+                     <bool>true</bool>
                     </property>
                    </widget>
                   </item>
@@ -474,6 +540,9 @@ color:white
               <property name="checkable">
                <bool>true</bool>
               </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
              </widget>
             </item>
             <item>
@@ -481,7 +550,8 @@ color:white
               <property name="styleSheet">
                <string notr="true">QWidget{
 
-background-color: rgb(24, 45	, 52);
+
+background-color: #1a659e;
 color:white
 
 }
@@ -502,6 +572,9 @@ color:white
                  <property name="checkable">
                   <bool>false</bool>
                  </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -511,6 +584,9 @@ color:white
                  </property>
                  <property name="checkable">
                   <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
                  </property>
                 </widget>
                </item>
@@ -542,6 +618,9 @@ color:white
               <property name="checkable">
                <bool>true</bool>
               </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
              </widget>
             </item>
             <item>
@@ -549,7 +628,8 @@ color:white
               <property name="styleSheet">
                <string notr="true">QWidget{
 
-background-color: rgb(24, 45	, 52);
+
+background-color: #1a659e;
 color:white
 
 }
@@ -570,6 +650,9 @@ color:white
                  <property name="checkable">
                   <bool>true</bool>
                  </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -578,6 +661,9 @@ color:white
                   <string>ENLISTED PERSONNEL</string>
                  </property>
                  <property name="checkable">
+                  <bool>true</bool>
+                 </property>
+                 <property name="flat">
                   <bool>true</bool>
                  </property>
                 </widget>
@@ -610,6 +696,9 @@ color:white
               <property name="checkable">
                <bool>true</bool>
               </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
              </widget>
             </item>
             <item>
@@ -617,7 +706,8 @@ color:white
               <property name="styleSheet">
                <string notr="true">QWidget{
 
-background-color: rgb(24, 45	, 52);
+
+background-color: #1a659e;
 color:white
 
 }
@@ -638,6 +728,9 @@ color:white
                  <property name="checkable">
                   <bool>false</bool>
                  </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -647,6 +740,9 @@ color:white
                  </property>
                  <property name="checkable">
                   <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
                  </property>
                 </widget>
                </item>
@@ -678,6 +774,9 @@ color:white
               <property name="checkable">
                <bool>true</bool>
               </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
              </widget>
             </item>
             <item>
@@ -685,7 +784,8 @@ color:white
               <property name="styleSheet">
                <string notr="true">QWidget{
 
-background-color: rgb(24, 45	, 52);
+
+background-color: #1a659e;
 color:white
 
 }
@@ -706,6 +806,9 @@ color:white
                  <property name="checkable">
                   <bool>false</bool>
                  </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -715,6 +818,9 @@ color:white
                  </property>
                  <property name="checkable">
                   <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
                  </property>
                 </widget>
                </item>
@@ -726,6 +832,9 @@ color:white
                  <property name="checkable">
                   <bool>false</bool>
                  </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -735,6 +844,9 @@ color:white
                  </property>
                  <property name="checkable">
                   <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
                  </property>
                 </widget>
                </item>
@@ -766,6 +878,9 @@ color:white
               <property name="checkable">
                <bool>true</bool>
               </property>
+              <property name="flat">
+               <bool>true</bool>
+              </property>
              </widget>
             </item>
             <item>
@@ -773,7 +888,8 @@ color:white
               <property name="styleSheet">
                <string notr="true">QWidget{
 
-background-color: rgb(24, 45	, 52);
+
+background-color: #1a659e;
 color:white
 
 }
@@ -794,6 +910,9 @@ color:white
                  <property name="checkable">
                   <bool>false</bool>
                  </property>
+                 <property name="flat">
+                  <bool>true</bool>
+                 </property>
                 </widget>
                </item>
                <item>
@@ -803,6 +922,9 @@ color:white
                  </property>
                  <property name="checkable">
                   <bool>false</bool>
+                 </property>
+                 <property name="flat">
+                  <bool>true</bool>
                  </property>
                 </widget>
                </item>
@@ -833,6 +955,9 @@ color:white
               </property>
               <property name="checkable">
                <bool>false</bool>
+              </property>
+              <property name="flat">
+               <bool>true</bool>
               </property>
              </widget>
             </item>
@@ -877,12 +1002,12 @@ color:Black</string>
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>911</width>
+       <width>941</width>
        <height>731</height>
       </rect>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>9</number>
      </property>
      <widget class="QWidget" name="personnel_records_page">
       <widget class="QLabel" name="label_4">
@@ -1432,11 +1557,34 @@ color:white;</string>
         </rect>
        </property>
       </widget>
+      <widget class="QTextEdit" name="textEdit_28">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>290</y>
+         <width>231</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>290</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Browse</string>
+       </property>
+      </widget>
       <widget class="QLabel" name="label_145">
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>300</y>
+         <y>290</y>
          <width>141</width>
          <height>31</height>
         </rect>
@@ -1452,29 +1600,6 @@ color:white;</string>
        </property>
        <property name="text">
         <string>Upload Order:</string>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="browser_btn">
-       <property name="geometry">
-        <rect>
-         <x>390</x>
-         <y>300</y>
-         <width>111</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Browse Files</string>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="UploadOrderTextfield">
-       <property name="geometry">
-        <rect>
-         <x>150</x>
-         <y>300</y>
-         <width>231</width>
-         <height>31</height>
-        </rect>
        </property>
       </widget>
      </widget>
@@ -1676,7 +1801,7 @@ color:white;</string>
        <property name="geometry">
         <rect>
          <x>150</x>
-         <y>360</y>
+         <y>350</y>
          <width>741</width>
          <height>41</height>
         </rect>
@@ -1739,7 +1864,7 @@ color:white;</string>
       <widget class="QPushButton" name="pushButton">
        <property name="geometry">
         <rect>
-         <x>390</x>
+         <x>400</x>
          <y>310</y>
          <width>111</width>
          <height>31</height>
@@ -2704,7 +2829,7 @@ color:white;</string>
          </column>
          <column>
           <property name="text">
-           <string>New Column</string>
+           <string>AFSN</string>
           </property>
          </column>
          <column>
@@ -2714,12 +2839,12 @@ color:white;</string>
          </column>
          <column>
           <property name="text">
-           <string>New Column</string>
+           <string>FULLNAME</string>
           </property>
          </column>
          <column>
           <property name="text">
-           <string>FULLNAME</string>
+           <string>UNIT</string>
           </property>
          </column>
          <column>
@@ -2925,7 +3050,8 @@ color:white;</string>
     <property name="styleSheet">
      <string notr="true">QWidget{
 
-background-color: rgb(0, 62, 63);
+
+background-color: #1a659e;
 color:white;
 }</string>
     </property>
@@ -3027,114 +3153,18 @@ color:white;
  </resources>
  <connections>
   <connection>
-   <sender>reenlistment_btn</sender>
+   <sender>attrition_btn</sender>
    <signal>toggled(bool)</signal>
-   <receiver>reenlistmen_dropdown</receiver>
+   <receiver>attrition_dropdown</receiver>
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>327</x>
-     <y>311</y>
+     <y>660</y>
     </hint>
     <hint type="destinationlabel">
      <x>327</x>
-     <y>350</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>schooling_btn</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>seniority_dropdown</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>327</x>
-     <y>494</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>327</x>
-     <y>533</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>promotion_btn</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>promotion_dropdown</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>327</x>
-     <y>872</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>327</x>
-     <y>911</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_46</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>officerschooling_dropdown</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>317</x>
-     <y>543</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>317</x>
-     <y>574</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_47</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>elinstschooling_dropdown</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>317</x>
-     <y>687</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>317</x>
-     <y>718</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>seniority_liner_btn</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>schooling_dropdown</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>327</x>
-     <y>993</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>327</x>
-     <y>1032</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>afscmonitoring_btn</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>afsc_monitoring_dropdown</receiver>
-   <slot>setVisible(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>327</x>
-     <y>1114</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>327</x>
-     <y>1189</y>
+     <y>742</y>
     </hint>
    </hints>
   </connection>
@@ -3146,27 +3176,123 @@ color:white;
    <hints>
     <hint type="sourcelabel">
      <x>327</x>
-     <y>1267</y>
+     <y>605</y>
     </hint>
     <hint type="destinationlabel">
      <x>327</x>
-     <y>1411</y>
+     <y>704</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>attrition_btn</sender>
+   <sender>afscmonitoring_btn</sender>
    <signal>toggled(bool)</signal>
-   <receiver>attrition_dropdown</receiver>
+   <receiver>afsc_monitoring_dropdown</receiver>
    <slot>setVisible(bool)</slot>
    <hints>
     <hint type="sourcelabel">
      <x>327</x>
-     <y>1450</y>
+     <y>492</y>
     </hint>
     <hint type="destinationlabel">
      <x>327</x>
-     <y>1532</y>
+     <y>547</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>seniority_liner_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>schooling_dropdown</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>327</x>
+     <y>595</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>327</x>
+     <y>634</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>promotion_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>promotion_dropdown</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>327</x>
+     <y>533</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>327</x>
+     <y>572</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>schooling_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>seniority_dropdown</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>327</x>
+     <y>474</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>708</x>
+     <y>540</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_47</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>elinstschooling_dropdown</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>698</x>
+     <y>674</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>698</x>
+     <y>705</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_46</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>officerschooling_dropdown</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>698</x>
+     <y>510</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>698</x>
+     <y>561</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reenlistment_btn</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>reenlistmen_dropdown</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>327</x>
+     <y>311</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>758</x>
+     <y>550</y>
     </hint>
    </hints>
   </connection>
@@ -3181,8 +3307,8 @@ color:white;
      <y>148</y>
     </hint>
     <hint type="destinationlabel">
-     <x>768</x>
-     <y>450</y>
+     <x>818</x>
+     <y>550</y>
     </hint>
    </hints>
   </connection>
