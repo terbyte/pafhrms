@@ -29,10 +29,11 @@ class MySideBar(QMainWindow,Ui_MainWindow):
 
 
         self.personnel_recordsbtn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.personnel_records_page))
-        #placementpage_enlist
+        #palcement_offr_btn
         self.inactivepersonnel_btn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.Inactive_personnel_page_01))
         self.palcement_offr_btn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.Placement_page_officer_page))
         self.placementenlist_btn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.placementpage_enlist_page))
+        self.palcement_offr_btn.clicked.connect(lambda: self.stackedWidget.setCurrentWidget(self.Placement_page_officer_page))
 
     
 

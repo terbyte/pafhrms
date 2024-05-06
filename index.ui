@@ -1184,32 +1184,17 @@ color:white;</string>
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QTableWidget" name="PersonnelRecords_table">
+      <widget class="QTableWidget" name="tableWidget_2">
        <property name="geometry">
         <rect>
          <x>0</x>
          <y>320</y>
          <width>911</width>
-         <height>401</height>
+         <height>441</height>
         </rect>
        </property>
-       <property name="styleSheet">
-        <string notr="true">color:black</string>
-       </property>
-       <property name="showGrid">
-        <bool>false</bool>
-       </property>
-       <property name="gridStyle">
-        <enum>Qt::SolidLine</enum>
-       </property>
-       <attribute name="horizontalHeaderVisible">
-        <bool>false</bool>
-       </attribute>
-       <attribute name="horizontalHeaderCascadingSectionResizes">
-        <bool>false</bool>
-       </attribute>
        <attribute name="horizontalHeaderDefaultSectionSize">
-        <number>181</number>
+        <number>150</number>
        </attribute>
        <column>
         <property name="text">
@@ -1218,7 +1203,7 @@ color:white;</string>
        </column>
        <column>
         <property name="text">
-         <string>AFPSN</string>
+         <string>New Column</string>
         </property>
        </column>
        <column>
@@ -1228,12 +1213,12 @@ color:white;</string>
        </column>
        <column>
         <property name="text">
-         <string>FULL NAME</string>
+         <string>New Column</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>UNIT</string>
+         <string>FULLNAME</string>
         </property>
        </column>
        <column>
@@ -1478,10 +1463,47 @@ color:white;</string>
         <string>Placement page officer</string>
        </property>
       </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>80</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{font-size:22;}
+</string>
+       </property>
+       <property name="text">
+        <string>Name:</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>130</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>80</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
       <widget class="QLabel" name="label_22">
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>0</x>
          <y>10</y>
          <width>921</width>
          <height>41</height>
@@ -1499,100 +1521,10 @@ color:white;</string>
         <string>Personal Detail</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_3">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>80</y>
-         <width>131</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{font-size:22;}
-</string>
-       </property>
-       <property name="text">
-        <string>Name:</string>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="textEdit">
-       <property name="geometry">
-        <rect>
-         <x>160</x>
-         <y>80</y>
-         <width>741</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QPushButton" name="pushButton">
-       <property name="geometry">
-        <rect>
-         <x>160</x>
-         <y>360</y>
-         <width>741</width>
-         <height>41</height>
-        </rect>
-       </property>
-       <property name="text">
-        <string>Submit</string>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="textEdit_2">
-       <property name="geometry">
-        <rect>
-         <x>160</x>
-         <y>130</y>
-         <width>741</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="textEdit_3">
-       <property name="geometry">
-        <rect>
-         <x>160</x>
-         <y>170</y>
-         <width>741</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="textEdit_4">
-       <property name="geometry">
-        <rect>
-         <x>160</x>
-         <y>220</y>
-         <width>741</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="textEdit_5">
-       <property name="geometry">
-        <rect>
-         <x>160</x>
-         <y>260</y>
-         <width>741</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="textEdit_6">
-       <property name="geometry">
-        <rect>
-         <x>160</x>
-         <y>310</y>
-         <width>741</width>
-         <height>31</height>
-        </rect>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_23">
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>0</x>
          <y>130</y>
          <width>141</width>
          <height>31</height>
@@ -1606,61 +1538,53 @@ color:white;</string>
         <string>Present Unit:</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_24">
+      <widget class="QPushButton" name="pushButton">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>220</y>
-         <width>141</width>
-         <height>31</height>
+         <x>150</x>
+         <y>360</y>
+         <width>741</width>
+         <height>41</height>
         </rect>
        </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{font-size:22;}
-</string>
-       </property>
        <property name="text">
-        <string>Sub unit</string>
+        <string>Submit</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_25">
+      <widget class="QTextEdit" name="textEdit_6">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>170</y>
-         <width>141</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{font-size:22;}
-</string>
-       </property>
-       <property name="text">
-        <string>Reassignment unit</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_28">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
+         <x>150</x>
          <y>310</y>
-         <width>141</width>
+         <width>741</width>
          <height>31</height>
         </rect>
        </property>
-       <property name="styleSheet">
-        <string notr="true">QLabel{font-size:22;}
-</string>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>170</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
        </property>
-       <property name="text">
-        <string>Reassignment Date</string>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_4">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>220</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
        </property>
       </widget>
       <widget class="QLabel" name="label_29">
        <property name="geometry">
         <rect>
-         <x>10</x>
+         <x>0</x>
          <y>260</y>
          <width>141</width>
          <height>31</height>
@@ -1674,14 +1598,75 @@ color:white;</string>
         <string>Reassignment Date</string>
        </property>
       </widget>
+      <widget class="QLabel" name="label_24">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>220</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{font-size:22;}
+</string>
+       </property>
+       <property name="text">
+        <string>Sub unit</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>260</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_28">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>310</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{font-size:22;}
+</string>
+       </property>
+       <property name="text">
+        <string>Reassignment Date</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_25">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{font-size:22;}
+</string>
+       </property>
+       <property name="text">
+        <string>Reassignment unit</string>
+       </property>
+      </widget>
      </widget>
-     <widget class="QWidget" name="page_4">
+     <widget class="QWidget" name="placement_Officer_page">
       <widget class="QLabel" name="label_7">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>50</y>
-         <width>401</width>
+         <x>270</x>
+         <y>650</y>
+         <width>421</width>
          <height>51</height>
         </rect>
        </property>
@@ -1691,7 +1676,306 @@ color:white;</string>
         </font>
        </property>
        <property name="text">
-        <string>SCHOOLING</string>
+        <string>placement /officer page</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_57">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>270</y>
+         <width>921</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(24, 45	, 52);
+
+color:white;</string>
+       </property>
+       <property name="text">
+        <string>SEARCH</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>50</y>
+         <width>911</width>
+         <height>201</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QFrame" name="frame_7">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit_9"/>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLineEdit" name="lineEdit_10"/>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_58">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:black</string>
+             </property>
+             <property name="text">
+              <string>Middle Name</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLineEdit" name="lineEdit_11"/>
+           </item>
+           <item row="1" column="3">
+            <widget class="QLineEdit" name="lineEdit_12">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_59">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:black</string>
+             </property>
+             <property name="text">
+              <string>Last Name</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_60">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Sufffix</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_61">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:black</string>
+             </property>
+             <property name="text">
+              <string>First Name</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame_10">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="lineEdit_14">
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_62">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:black</string>
+             </property>
+             <property name="text">
+              <string>AFPSN</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QLineEdit" name="lineEdit_15"/>
+           </item>
+           <item row="3" column="4">
+            <widget class="QLineEdit" name="lineEdit_16"/>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLineEdit" name="lineEdit_17">
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLineEdit" name="lineEdit_18"/>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="label_63">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:black</string>
+             </property>
+             <property name="text">
+              <string>Unit</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_64">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:black</string>
+             </property>
+             <property name="text">
+              <string>Sex</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_65">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:black</string>
+             </property>
+             <property name="text">
+              <string>Rank</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_66">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:black</string>
+             </property>
+             <property name="text">
+              <string>Classification</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label_67">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>921</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(98, 160, 234);</string>
+       </property>
+       <property name="text">
+        <string>ACTIVE PERSONNEL RECORDS</string>
        </property>
       </widget>
      </widget>
@@ -1699,8 +1983,8 @@ color:white;</string>
       <widget class="QLabel" name="label_8">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>40</y>
+         <x>240</x>
+         <y>650</y>
          <width>401</width>
          <height>51</height>
         </rect>
@@ -1711,7 +1995,203 @@ color:white;</string>
         </font>
        </property>
        <property name="text">
-        <string>PROMOTION</string>
+        <string>placement / enlisted page</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_13">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>70</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_14">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>250</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_15">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>160</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_16">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>120</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_68">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>300</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{font-size:22;}
+</string>
+       </property>
+       <property name="text">
+        <string>Reassignment Date</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_69">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>921</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(98, 160, 234);</string>
+       </property>
+       <property name="text">
+        <string>Personal Detail</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>350</y>
+         <width>741</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Submit</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_17">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>210</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_18">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>300</y>
+         <width>741</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_70">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>120</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{font-size:22;}
+</string>
+       </property>
+       <property name="text">
+        <string>Present Unit:</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_71">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>160</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{font-size:22;}
+</string>
+       </property>
+       <property name="text">
+        <string>Reassignment unit</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_72">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>210</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{font-size:22;}
+</string>
+       </property>
+       <property name="text">
+        <string>Sub unit</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_73">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>250</y>
+         <width>141</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{font-size:22;}
+</string>
+       </property>
+       <property name="text">
+        <string>Reassignment Date</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_74">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>70</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{font-size:22;}
+</string>
+       </property>
+       <property name="text">
+        <string>Name:</string>
        </property>
       </widget>
      </widget>
@@ -2087,7 +2567,7 @@ background-color: rgb(98, 160, 234);</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>270</y>
+           <y>260</y>
            <width>921</width>
            <height>41</height>
           </rect>
@@ -2109,64 +2589,6 @@ color:white;</string>
           <set>Qt::AlignCenter</set>
          </property>
         </widget>
-        <widget class="QTableWidget" name="PersonnelRecords_table_2">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>320</y>
-           <width>911</width>
-           <height>401</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color:black</string>
-         </property>
-         <property name="showGrid">
-          <bool>false</bool>
-         </property>
-         <property name="gridStyle">
-          <enum>Qt::SolidLine</enum>
-         </property>
-         <attribute name="horizontalHeaderVisible">
-          <bool>false</bool>
-         </attribute>
-         <attribute name="horizontalHeaderCascadingSectionResizes">
-          <bool>false</bool>
-         </attribute>
-         <attribute name="horizontalHeaderDefaultSectionSize">
-          <number>181</number>
-         </attribute>
-         <column>
-          <property name="text">
-           <string>NR</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>AFPSN</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>RANK</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>FULL NAME</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>UNIT</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
-           <string>ACTION</string>
-          </property>
-         </column>
-        </widget>
         <widget class="QLabel" name="label_13">
          <property name="geometry">
           <rect>
@@ -2184,6 +2606,49 @@ color:white;</string>
          <property name="text">
           <string>INACTIVE PERSONNEL</string>
          </property>
+        </widget>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>310</y>
+           <width>911</width>
+           <height>441</height>
+          </rect>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>150</number>
+         </attribute>
+         <column>
+          <property name="text">
+           <string>NR</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>New Column</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>RANK</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>New Column</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>FULLNAME</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>ACTION</string>
+          </property>
+         </column>
         </widget>
        </widget>
        <widget class="QWidget" name="page_12">
