@@ -9,7 +9,10 @@ class MySideBar(QMainWindow,Ui_MainWindow):
     def __init__(self):
         super().__init__()
         self.setupUi(self)
-        self.setWindowTitle("SideBar Menu")
+        self.setWindowTitle("PAFHRMS")
+
+        #HIDE FRAMES(I CHOSE TO HIDE THE FRAME HERE SO YOU CAN UNDERSTAND AND EASILY  ADJUST THE )
+        
 
 
 

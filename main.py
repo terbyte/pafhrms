@@ -9,4 +9,4 @@ window =MySideBar()
 
 
 window.show()
-app.exec()
+app.exec()  
